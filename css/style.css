@@ -1,0 +1,50 @@
+.skillset .select2-container--default.select2-container--focus .select2-selection--multiple ,
+.skillset .select2-container--default .select2-selection--multiple{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    min-height: 60px;
+}
+.skillset .select2-container--default .select2-selection--multiple .select2-selection__choice {
+    padding: 10px;
+    background: #eee;
+    margin: 10px 10px 0 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    border: 0;
+    color: #666;
+}
+.skillset .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+    font-weight: lighter;
+    margin-right: 0;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.skillset .select2-container--default .select2-selection--multiple .select2-selection__rendered {
+    padding: 0 10px 10px 10px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.suggested-skills ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.suggested-skills ul li { 
+    background: #fff;
+    color: #666;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 4px;
+    padding: 8px 15px;
+    margin:10px 10px 0 0;
+    font-size: 13px;
+}
+.suggested-skills ul li a {
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.suggested-skills ul li a i {
+    margin-left: 10px;
+}
