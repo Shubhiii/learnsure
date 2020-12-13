@@ -778,10 +778,15 @@ html.sticky-header-active .default-logo {
 .category-bar {
   background: #001436;
   position: sticky;
-  top: 70px;
+  top: 101px;
   color: #fff;
   z-index: 99;
   padding: 8px 10px;
+  transition: all ease-in-out 0.3s;
+}
+.category-bar.stick {
+  top: 70px;
+  transition: all ease-in-out 0.3s;
 }
 
 .category-bar .categories > a {
@@ -1076,4 +1081,104 @@ html.sticky-header-active .default-logo {
 
 .flex-grow-1 {
   flex-grow: 1;
+}
+
+.people-meet {
+  text-align: left;
+  display: flex;
+  position: relative;
+  margin: 0;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.people-meet:first-child {
+  padding-top: 0;
+}
+
+.people-meet:last-child {
+  padding-bottom: 0;
+}
+
+.people-meet + .people-meet {
+  border-top: 1px solid #eee;
+}
+
+.people-meet figcaption {
+  padding-left: 15px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.people-meet figcaption a {
+  border: 1px solid #ed553b;
+  background-color: #ffeeeb;
+  color: #ed553b;
+  line-height: 1;
+  border-radius: 4px;
+  padding: 7px 15px;
+}
+
+.people-meet figcaption .wrap {
+  flex-grow: 1;
+}
+
+.people-meet img {
+  width: 50px;
+  display: block;
+  /* margin: 0 auto 10px; */
+  border: 1px solid #eee;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.people-meet h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.people-meet p {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.5;
+  margin-top: 5px;
+  line-height: 1;
+  color: #000;
+}
+
+.people-meet span {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  color: #001436;
+}
+
+.people-meet span i {
+  margin-right: 5px;
+}
+
+.people-meet > .icon {
+  position: relative;
+}
+
+.people-meet > .icon > i {
+  opacity: 0;
+  position: absolute;
+  width: 20px;
+  bottom: -3px;
+  right: -3px;
+  display: flex;
+  border-radius: 50%;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  color: #fff;
+  background-color: #ed553b;
 }

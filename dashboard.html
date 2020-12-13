@@ -82,15 +82,19 @@
                       <ul class="nav nav-pills">
                         <li>
                           <a href="/" class="p-0 mr-4">
-                            <i class="far fa-bell"></i>
+                            <i class="icon-bell icons"></i>
                             <span class="count">2</span>
                           </a>
                         </li>
                         <li>
-                          <a href="/" class="p-0 mr-4"><i class="far fa-heart"></i><span class="count">1</span></a>
+                          <a href="/" class="p-0 mr-4">
+                            <i class="icon-pin icons"></i>
+                            <span class="count">1</span></a>
                         </li>
                         <li>
-                          <a href="/" class="p-0 mr-4"><i class="far fa-envelope"></i><span class="count">1</span></a>
+                          <a href="/" class="p-0 mr-4">
+                            <i class="icon icon-envelope"></i>
+                            <span class="count">1</span></a>
                         </li>
                         <li>
                           <a href="/">
@@ -110,7 +114,7 @@
       </div>
     </header>
 
-    <div class="category-bar">
+    <div class="category-bar" id="category-bar">
       <div class="container">
         <div class="categories">
           <a href="#">Categories <i class="fas fa-angle-down ml-2"></i></a>
@@ -1318,6 +1322,60 @@
                 <option>Under 5 Minutes</option>
               </select> -->
             </div>
+
+            <figure class="people-meet">
+              <div class="icon">
+                <i class="fas fa-book-reader"></i>
+                <img src="./images/simulation.jpg" alt="People_to_meet"/>
+              </div>
+              <figcaption>
+                <div class="wrap">
+                  <h3>Shubham Pandey</h3>
+                  <p>Sr. Web Designer</p>
+                  <span>
+                    <i class="fas fa-book-reader"></i>
+                    Learner
+                  </span>
+                </div>
+                <a href="javascript:void(0)">Follow</a>
+              </figcaption>
+            </figure>
+
+            <figure class="people-meet">
+              <div class="icon">
+                <img src="./images/simulation.jpg" alt="People_to_meet"/>
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <figcaption>
+                <div class="wrap">
+                  <h3>Ravi Teja</h3>
+                  <p>Sr. Web Developer</p>
+                  <span>
+                    <i class="fas fa-graduation-cap"></i>
+                    Mentor
+                  </span>
+                </div>
+                <a href="javascript:void(0)">Follow</a>
+              </figcaption>
+            </figure>
+
+            <figure class="people-meet">
+              <div class="icon">
+                <img src="./images/simulation.jpg" alt="People_to_meet"/>
+                <i class="fas fa-chalkboard-teacher"></i>
+              </div>
+              <figcaption>
+                <div class="wrap">
+                  <h3>Rohit Paul</h3>
+                  <p>Full Stack Developer</p>
+                  <span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    Trainer
+                  </span>
+                </div>
+                <a href="javascript:void(0)" class="border-0">Following</a>
+              </figcaption>
+            </figure>
           </div>
         </div>
 
@@ -1501,6 +1559,16 @@
       // $("#register").hide();
       $("#login").hide();
     })
+
+    $(function(){
+      $(window).scroll(function(){
+        if($(this).scrollTop()>= 70){
+          $("#category-bar").addClass('stick')
+        } else {
+          $("#category-bar").removeClass('stick')
+        }
+      });
+    });
   </script>
 </body>
 </html>
