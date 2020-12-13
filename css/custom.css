@@ -167,9 +167,9 @@ p {
   color: #f6d55c;
 }
 
-#header .header-nav-main.header-nav-main-text-size-2 nav > ul > li > a > i {
+/* #header .header-nav-main.header-nav-main-text-size-2 nav > ul > li > a > i {
   margin-left: 5px;
-}
+} */
 
 html section.section-dark {
   background-color: #001436 !important;
@@ -254,7 +254,7 @@ html.sticky-header-active .default-logo {
   transition: all ease-in-out 0.3s;
 }
 
-.course-thumbnail:hover {
+.course-thumbnail:not(.no-effect):hover {
   transform: translateY(-15px);
   transition: all ease-in-out 0.3s;
 }
@@ -773,4 +773,307 @@ html.sticky-header-active .default-logo {
 
 .user-info-page .tab-pane {
   min-height: 348px;
+}
+
+.category-bar {
+  background: #001436;
+  position: sticky;
+  top: 70px;
+  color: #fff;
+  z-index: 99;
+  padding: 8px 10px;
+}
+
+.category-bar .categories > a {
+  color: #fff;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  background: #ed553b;
+  padding: 7px 20px;
+  border-radius: 4px;
+}
+
+.category-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-bar .btn {
+  padding: 5px 20px;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+#header .header-nav-main nav > ul > li > a {
+  display: flex;
+  align-items: center;
+}
+
+#header .header-nav-main nav > ul > li > a > img {
+  border-radius: 50%;
+  width: 35px;
+  border: 1px solid #eee;
+  object-fit: cover;
+  height: 35px;
+  margin-right: 10px;
+}
+
+#header .header-nav-main nav > ul > li > a > p {
+  font-size: 12px;
+  color: #333;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0;
+}
+
+#header .header-nav-main nav > ul > li > a > i {
+  font-size: 20px;
+}
+
+#header .header-nav-main nav > ul > li > a > i.fa-chevron-down {
+  font-size: inherit;
+  margin-left: 5px;
+}
+
+#header .header-nav-main nav > ul > li > a > .count {
+  position: absolute;
+  background: #ed553b;
+  line-height: 1;
+  right: -10px;
+  font-size: 12px;
+  top: -10px;
+  padding: 0 2px;
+  height: 20px;
+  color: #fff;
+  min-width: 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .header-nav-main nav > ul > li > a > p > span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 3px;
+  color: #ed553b;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  border: none;
+  padding: 8px 12px 8px 40px;
+  box-sizing: border-box;
+  color: #000;
+  width: 300px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+.input-with-icon input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.input-with-icon i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #001436;
+}
+
+.nav {
+  align-items: center;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  background-color: #0077ff;
+  color: #fff;
+}
+
+.owl-carousel .owl-nav button:hover {
+  background-color: #001436 !important;
+}
+
+.owl-carousel.show-nav-title .owl-nav button[class*="owl-"] {
+  color: #000;
+}
+
+.owl-carousel.show-nav-title .owl-nav button[class*="owl-"]:hover,
+.owl-carousel.show-nav-title .owl-nav button[class*="owl-"]:active {
+  color: #ed553b;
+}
+
+.heading-with-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heading-with-filter > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.heading-with-filter > ul > li + li {
+  border-left: 1px solid #ccc;
+  line-height: 1;
+}
+
+.heading-with-filter > ul > li {
+  padding: 0 10px;
+}
+
+.heading-with-filter > ul > li:last-child {
+  padding-right: 0;
+}
+
+.heading-with-filter > ul > li > a {
+  color: #000;
+}
+
+.heading-with-filter > ul > li > a.active {
+  color: #ed553b;
+  font-weight: 600;
+}
+
+/* .invitation-box {
+  min-width: 400px;
+} */
+
+.invitation-box .invitation-intrest p {
+  color: #000;
+  font-size: 12px;
+  margin: 0;
+  line-height: 1;
+  /* border-top: 1px solid #eee;
+  margin-top: 10px;
+  padding-top: 5px; */
+}
+
+.invitation-box {
+  margin-bottom: 35px;
+}
+
+.invitation-box .invitation-intrest {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.invitation-box .event-box {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 10px;
+}
+
+.invitation-box .event-box i {
+  background-color: #ed553b;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  /* margin-bottom: 5px; */
+}
+
+.invitation-box .event-box p {
+  color: #000;
+  font-size: 14px;
+  font-size: 500;
+  line-height: 1;
+  margin: 5px 0 0;
+}
+
+.invitation-box .event-box h3 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.invitation-box .invitation-intrest .button-group {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.invitation-box .invitation-intrest .button-group a {
+  line-height: 1;
+  padding: 5px 10px;
+  font-size: 12px;
+  border: 1px solid #ed553b;
+  border-radius: 4px;
+}
+
+.invitation-box .invitation-intrest .button-group a + a {
+  margin-left: 5px;
+}
+
+.invitation-box .invitation-intrest .button-group a.yes {
+  background-color: #ed553b;
+  color: #fff;
+}
+
+.invitation-box .invitation-intrest .button-group a.no {
+  border-color: #ed553b;
+  color: #ed553b;
+}
+
+.invitation-box .hosted-by p {
+  color: #000;
+  font-size: 14px;
+  margin: 0;
+}
+
+.invitation-box .hosted-by .host-info {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.invitation-box .hosted-by .host-info img {
+  border-radius: 50%;
+  width: 40px;
+  border: 1px solid #eee;
+  object-fit: cover;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.invitation-box .hosted-by .host-info .wrap h3 {
+  text-transform: none;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+}
+
+.invitation-box .hosted-by .host-info .wrap p {
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.5;
+  margin-top: 5px;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
 }

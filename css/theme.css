@@ -121,7 +121,7 @@ li {
   align-self: stretch;
   position: relative;
   align-items: center;
-  flex-grow: 1;
+  /* flex-grow: 1; */
   flex-direction: column;
 }
 
@@ -1277,6 +1277,8 @@ li {
 #header.header-effect-shrink .header-logo {
   display: flex;
   align-items: center;
+  border-right: 1px solid #eee;
+  padding-right: 0.9rem;
 }
 
 #header.header-dark .header-body {
@@ -1552,16 +1554,20 @@ html.sticky-header-enabled.sticky-header-active
   #header .header-nav-main {
     display: flex !important;
     height: auto !important;
+    flex-grow: 1;
   }
 
   #header .header-nav-main nav {
     display: flex !important;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-between;
   }
 
   #header .header-nav-main nav > ul > li {
     height: 100%;
-    align-self: stretch;
-    margin-left: 2px;
+    /* align-self: stretch; */
+    /* margin-left: 2px; */
   }
 
   #header .header-nav-main nav > ul > li > a {
@@ -2474,7 +2480,7 @@ html.sticky-header-enabled.sticky-header-active
   #header .header-nav {
     display: flex;
     align-items: center;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     justify-content: flex-end;
     align-self: stretch;
   }
@@ -2590,9 +2596,9 @@ html.sticky-header-enabled.sticky-header-active
     position: relative;
     background: transparent !important;
     padding: 0 0.9rem;
-    margin: 1px 0 0;
-    min-height: 60px;
-    height: 100%;
+    margin: 0 0;
+    /* min-height: 60px;
+    height: 100%; */
   }
 
   #header .header-nav.header-nav-links nav > ul > li:hover > a:before,
@@ -9500,6 +9506,10 @@ html.dark .pagination > li > a,
 html.dark .pagination > li > span {
   background-color: #2c3237;
   border-color: #282d31;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
 }
 
 html.dark .theme-default .nivoSlider {
