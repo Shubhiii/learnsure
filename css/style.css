@@ -2,6 +2,7 @@
 .skillset .select2-container--default .select2-selection--multiple{
     border: 1px solid rgba(0, 0, 0, 0.09);
     min-height: 60px;
+    height: auto;
 }
 .skillset .select2-container--default .select2-selection--multiple .select2-selection__choice {
     padding: 10px;
@@ -25,6 +26,7 @@
     align-items: center;
     display: flex;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 .suggested-skills ul {
     display: flex;
