@@ -646,7 +646,7 @@ html.sticky-header-active .default-logo {
   color: #fff; */
 }
 
-.user-info {
+.user-info-page {
   background-image: url("https://learnsure.ai/wp-content/uploads/2020/09/final-lms-screen-desktop.jpg");
   padding: 0 75px;
   background-position: 100%;
@@ -656,12 +656,12 @@ html.sticky-header-active .default-logo {
   min-height: 100vh;
 }
 
-.user-info * {
+.user-info-page * {
   position: relative;
   z-index: 11;
 }
 
-.user-info::before {
+.user-info-page::before {
   content: "";
   background-color: #ed553b;
   position: absolute;
@@ -678,72 +678,6 @@ html.sticky-header-active .default-logo {
   align-items: center;
 }
 
-.user-info .tabs-simple .tab-content {
-  background-color: #fff;
-  border-radius: 4px;
-}
-
-.user-info .tabs.tabs-simple .nav-tabs {
-  margin: 0 0 25px;
-}
-
-.user-info .tabs.tabs-simple .nav-tabs:before {
-  content: '';
-  width: calc(100% - 200px);
-  height: 1px;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -5px;
-}
-
-.user-info .tabs.tabs-simple .nav-tabs > li {
-  margin-bottom: 0;
-  width: calc(100% / 4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* .user-info .tabs.tabs-simple .nav-tabs > li.active {
-  background-color: #fff;
-  border-radius: 50px;
-}
-
-.user-info .tabs.tabs-simple .nav-tabs > li.active a {
-  color: #ed553b;
-} */
-
-.user-info .tabs.tabs-bottom .nav-tabs li .nav-link {
-  padding: 0 0 5px;
-  margin: 0;
-  font-size: 14px;
-  border: none;
-  /* text-transform: uppercase; */
-  font-weight: 500;
-  color: #fff;
-  position: relative;
-}
-
-.user-info .tabs.tabs-bottom .nav-tabs li .nav-link::before {
-  content: '';
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  background-color: #fff;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -9px;
-}
-
-.user-info .tabs.tabs-bottom .nav-tabs li .nav-link:hover,
-.user-info .tabs.tabs-bottom .nav-tabs li .nav-link:focus {
-  border: none;
-}
-
 .image-upload-box .image {
   width: 200px;
   overflow: hidden;
@@ -752,26 +686,40 @@ html.sticky-header-active .default-logo {
   height: 200px;
   border: 1px solid #eee;
   background-color: #eee;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
-.image-upload-box .image label {
+.image-upload-box .image i {
   position: absolute;
-  bottom: 0;
-  padding: 15px 0;
-  left: 0;
-  margin: 0;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.image-upload-box label {
+  /* position: absolute; */
+  padding: 10px 0;
+  margin: 5px 0 0;
   line-height: 1;
   width: 100%;
   cursor: pointer;
+  border-radius: 4px;
   color: #fff;
   font-size: 14px;
   /* text-transform: uppercase; */
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #ed553b;
 }
 
-.image-upload-box .image label input {
+.image-upload-box label input {
   display: none;
 }
 
@@ -789,7 +737,7 @@ html.sticky-header-active .default-logo {
 }
 
 .input-group {
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border: 1px solid rgba(0, 0, 0, 0.09);
 }
 
@@ -809,29 +757,20 @@ html.sticky-header-active .default-logo {
   padding-right: 0;
 }
 
-.tab-arrow {
-  position: absolute;
-  top: 50%;
-  background-color: #fff;
-  font-size: 20px;
-  width: 50px;
-  border-radius: 50%;
+.tab-content .button-group {
+  border-top: 1px solid #eee;
+  margin-top: 30px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50px;
-  transform: translateY(-50%);
+  justify-content: flex-end;
+  padding-top: 20px;
 }
 
-.tab-arrow.disabled {
-  opacity: .3;
-  pointer-events: none;
+.tab-content .button-group .wrap {
+  display: flex;
+  align-items: center;
 }
 
-.tab-arrow.prev {
-  left: -100px;
-}
-
-.tab-arrow.next {
-  right: -100px;
+.user-info-page .tab-pane {
+  min-height: 348px;
 }

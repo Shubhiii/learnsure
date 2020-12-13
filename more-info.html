@@ -40,7 +40,7 @@
     </div>
   </div>
 
-  <div class="user-info">
+  <div class="user-info-page">
     <div class="container">
       <div class="secondary-header">
         <a href="index.html">
@@ -51,8 +51,8 @@
       <div class="row">
         <div class="col-md-8 offset-md-2">
 
-          <div class="tabs tabs-bottom tabs-center tabs-simple">
-            <ul class="nav nav-tabs">
+          <div class="tabs">
+            <ul class="nav nav-tabs nav-justified flex-column flex-md-row align-items-end">
               <li class="nav-item active">
                 <a class="nav-link" href="#tabsNavigationSimple1" data-toggle="tab">Personal Info</a>
               </li>
@@ -67,14 +67,8 @@
               </li>
             </ul>
 
-            <div class="tab-content p-5">
-              <a href="javascript:void(0)" class="tab-arrow prev disabled">
-                <i class="fas fa-angle-left"></i>
-              </a>
-              <a href="javascript:void(0)" class="tab-arrow next">
-                <i class="fas fa-angle-right"></i>
-              </a>
-              <div class="tab-pane" id="tabsNavigationSimple1">
+            <div class="tab-content p-4">
+              <div class="tab-pane active" id="tabsNavigationSimple1">
                 <div class="row align-items-center">
                   <div class="col-sm-6">
                     <div class="form-row">
@@ -110,18 +104,20 @@
                     <div class="image-upload-box">
                       <div class="image">
                         <img src="https://learnsure.mwpsites-a.net/wp-content/uploads/2020/09/p115847804_dww13.100-2.jpg" alt=""/>
-                        <label>
-                          <input type="file"/>
-                          Choose File
-                        </label>
+                        <i class="far fa-trash-alt"></i>
                       </div>
+                      <label>
+                        <input type="file"/>
+                        <i class="fas fa-upload mr-2"></i>
+                        Choose File
+                      </label>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="tab-pane" id="tabsNavigationSimple2">
                 <div class="row align-items-center">
-                  <div class="col-sm-6">
+                  <div class="col-sm-12">
                     <div class="form-row">
                       <div class="form-group col">
                         <label class="font-weight-bold text-dark">Company Name</label>
@@ -138,7 +134,7 @@
 
                     <div class="form-row">
                       <div class="form-group col">
-                        <label class="font-weight-bold text-dark">Experience</label>
+                        <label class="font-weight-bold text-dark">Total Experience</label>
                         <select class="form-control form-control-lg">
                           <option>
                             Select
@@ -149,16 +145,16 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane active" id="tabsNavigationSimple3">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-row">
-                      <div class="form-group col">
-                        <label class="font-weight-bold text-dark">Your Website URL</label>
-                        <input type="text" value="" class="form-control form-control-lg" required="">
-                      </div>
-                    </div>
+              <div class="tab-pane" id="tabsNavigationSimple3">
+                <div class="form-row">
+                  <div class="form-group col">
+                    <label class="font-weight-bold text-dark">Your Website URL</label>
+                    <input type="text" value="" class="form-control form-control-lg" required="">
+                  </div>
+                </div>
 
+                <div class="row">
+                  <div class="col-sm-6">
                     <div class="form-row">
                       <div class="form-group col">
                         <label class="font-weight-bold text-dark">Facebook URL</label>
@@ -170,8 +166,9 @@
                         </div>
                       </div>
                     </div>
+                  </div>
 
-
+                  <div class="col-sm-6">
                     <div class="form-row">
                       <div class="form-group col">
                         <label class="font-weight-bold text-dark">Twitter URL</label>
@@ -183,7 +180,9 @@
                         </div>
                       </div>
                     </div>
+                  </div>
 
+                  <div class="col-sm-6">
                     <div class="form-row">
                       <div class="form-group col">
                         <label class="font-weight-bold text-dark">Linkedin URL</label>
@@ -195,7 +194,9 @@
                         </div>
                       </div>
                     </div>
+                  </div>
 
+                  <div class="col-sm-6">
                     <div class="form-row">
                       <div class="form-group col m-0">
                         <label class="font-weight-bold text-dark">Youtube URL</label>
@@ -216,6 +217,15 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam posuere porta. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia.</p>
                   <p>Lorem ipsum dolor sit amet. Quisque ut nulla at nunc <a href="#">vehicula</a> lacinia. Proin adipiscing porta tellus, ut feugiat nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula. Fusce eget metus lorem, ac viverra leo. Nullam convallis, arcu vel pellentesque sodales, nisi est varius diam, ac ultrices sem ante quis sem. Proin ultricies volutpat sapien, nec scelerisque ligula mollis lobortis.</p>
                 </div>
+              </div>
+
+              <div class="button-group">
+                <a href="#" class="btn btn-primary btn-modern text-3 px-5 py-3">
+                  Prev
+                </a>
+                <a href="#" class="btn btn-orange text-uppercase ml-3">
+                  Next
+                </a>
               </div>
             </div>
           </div>
