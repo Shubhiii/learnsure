@@ -1258,7 +1258,7 @@ li {
   > ul
   > li:hover
   > a {
-  margin: 0;
+  margin: 0 0.9rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1562,6 +1562,10 @@ html.sticky-header-enabled.sticky-header-active
     flex-grow: 1;
     align-items: center;
     justify-content: space-between;
+  }
+
+  #header .header-nav-main nav .nav {
+    height: 100%;
   }
 
   #header .header-nav-main nav > ul > li {
@@ -2595,10 +2599,10 @@ html.sticky-header-enabled.sticky-header-active
   #header .header-nav.header-nav-line nav > ul > li:hover > a {
     position: relative;
     background: transparent !important;
-    padding: 0 0.9rem;
+    padding: 0;
     margin: 0 0;
-    /* min-height: 60px;
-    height: 100%; */
+    min-height: 60px;
+    height: 100%;
   }
 
   #header .header-nav.header-nav-links nav > ul > li:hover > a:before,
@@ -3035,6 +3039,7 @@ html.sticky-header-enabled.sticky-header-active
     > li
     > a {
     color: #fff;
+    display: block;
   }
 
   #header

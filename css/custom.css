@@ -782,11 +782,11 @@ html.sticky-header-active .default-logo {
   color: #fff;
   z-index: 99;
   padding: 8px 10px;
-  transition: all ease-in-out 0.3s;
+  transition: top ease 0.3s;
 }
 .category-bar.stick {
   top: 70px;
-  transition: all ease-in-out 0.3s;
+  transition: top ease 0.3s;
 }
 
 .category-bar .categories > a {
@@ -833,7 +833,7 @@ html.sticky-header-active .default-logo {
   margin: 0;
 }
 
-#header .header-nav-main nav > ul > li > a > i {
+#header .header-nav-main nav > ul > li > a i {
   font-size: 20px;
 }
 
@@ -842,7 +842,7 @@ html.sticky-header-active .default-logo {
   margin-left: 5px;
 }
 
-#header .header-nav-main nav > ul > li > a > .count {
+#header .header-nav-main nav > ul > li > a .count {
   position: absolute;
   background: #ed553b;
   line-height: 1;
@@ -861,7 +861,7 @@ html.sticky-header-active .default-logo {
 
 #header .header-nav-main nav > ul > li > a > p > span {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 3px;
   color: #ed553b;
@@ -1181,4 +1181,27 @@ html.sticky-header-active .default-logo {
   height: 20px;
   color: #fff;
   background-color: #ed553b;
+}
+
+.hover-outline-effect {
+  position: relative;
+}
+
+.hover-outline-effect:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 0;
+  transition: all ease-in-out 0.3s;
+  background: #ed553b;
+  height: 2px;
+  left: 0;
+  /* left: 50%;
+  transform: translateX(-50%); */
+}
+
+.hover-outline-effect:hover:before {
+  transition: all ease-in-out 0.3s;
+  /* width: calc(100% - (0.9rem * 2)); */
+  width: 100%;
 }
