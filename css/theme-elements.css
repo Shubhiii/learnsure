@@ -12127,7 +12127,7 @@ html.boxed .slider-container {
 .nav-tabs li .nav-link {
   border-radius: 5px 5px 0 0;
   font-size: 14px;
-  transition: all 0.2s;
+  /* transition: all 0.2s; */
   margin-right: 1px;
   border: none !important;
 }

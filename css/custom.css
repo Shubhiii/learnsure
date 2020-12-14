@@ -259,7 +259,12 @@ html.sticky-header-active .default-logo {
   transition: all ease-in-out 0.3s;
 }
 
-.course-thumbnail:not(.no-effect):hover {
+/* .course-thumbnail:not(.no-effect):hover {
+  transform: translateY(-15px);
+  transition: all ease-in-out 0.3s;
+} */
+
+.course-thumbnail:hover {
   transform: translateY(-15px);
   transition: all ease-in-out 0.3s;
 }
@@ -777,7 +782,9 @@ html.sticky-header-active .default-logo {
 }
 
 .user-info-page .tab-pane {
-  min-height: 348px;
+  height: 348px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .category-bar {
@@ -982,6 +989,19 @@ html.sticky-header-active .default-logo {
   text-align: center;
   transition: all ease-in-out 0.3s;
 }
+
+.invitation-box a.req-sent,
+.invitation-box a.req-sent:hover {
+  border: 1px solid #ffeeeb;
+  background-color: #ffeeeb;
+  color: #ed553b !important;
+}
+
+/* .invitation-box a.req-to-join {
+  border: 1px solid #ed553b;
+  background-color: #ffeeeb;
+  color: #ed553b;
+} */
 
 .invitation-box a:hover {
   background-color: #ed553b;
