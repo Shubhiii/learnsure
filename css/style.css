@@ -51,4 +51,12 @@
     margin-left: 10px;
 }
 
+/*user-info-page chng*/
+.user-info-page .nav-tabs li .nav-link {
+    padding: 0.8rem 2rem;
+}
+.user-info-page .nav-tabs li.active .nav-link {
+    padding: 1rem 2rem;
+}
+
 
