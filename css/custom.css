@@ -981,7 +981,7 @@ html.sticky-header-active .default-logo {
 .invitation-box a:hover {
   background-color: #ed553b;
   transition: all ease-in-out 0.3s;
-  color: #fff;
+  color: #fff !important;
 }
 
 .invitation-box .event-image span {
@@ -1041,10 +1041,13 @@ html.sticky-header-active .default-logo {
 }
 
 .invitation-box .invitation-intrest {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #f1f1f1;
   border-radius: 4px;
   margin-top: 15px;
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 .invitation-box .event-box {
@@ -1095,7 +1098,7 @@ html.sticky-header-active .default-logo {
   padding: 5px 10px;
   font-size: 12px;
   border: 1px solid #ed553b;
-  border-radius: 4px;
+  border-radius: 50px;
 }
 
 .invitation-box .invitation-intrest .button-group a + a {
@@ -1283,6 +1286,9 @@ html.sticky-header-active .default-logo {
 
 .post-card .post-card--header {
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post-card .post-card--header p {
@@ -1519,4 +1525,8 @@ html.sticky-header-active .default-logo {
   border-color: #ed553b;
   font-weight: 600;
   color: #fff;
+}
+
+.border-color-transparent {
+  border-color: transparent !important;
 }
