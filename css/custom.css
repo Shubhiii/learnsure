@@ -1439,12 +1439,27 @@ html.sticky-header-active .default-logo {
   color: #000;
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .post-card .post-card--footer .actions li a.active i,
 .post-card .post-card--footer .actions li a.active strong {
   color: #ed553b;
+}
+
+.post-card .video-post {
+  position: relative;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-open-icon {
+  position: absolute;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
 }
 
 .create-post {
@@ -1750,6 +1765,10 @@ html.sticky-header-active .default-logo {
   margin-bottom: 5px;
 }
 
+.profile-highlights p.points {
+  background-color: #d4edda;
+}
+
 .primary-profile-box ul {
   display: flex;
   list-style: none;
@@ -1824,4 +1843,67 @@ html.sticky-header-active .default-logo {
 
 .no-hover:hover {
   background-color: transparent !important;
+}
+
+
+
+/*================================ style ===========================*/
+/*feeds*/
+.followers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.followers .people-meet {
+  text-align: center;
+  padding: 0;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 20px;
+  justify-content: center;
+}
+.followers .people-meet figcaption {
+  margin-top: 10px;
+}
+
+.followers .people-meet + .people-meet {
+  border-top: 0;
+}
+/*event*/
+.today-event-heading {
+  background-color: #ffeeeb;
+    color: #ed553b;
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.suggested-event-list .host-info {
+  display: flex;
+  align-items: center;
+}
+.suggested-event-list .host-info img {
+  width: 40px;
+  height: 40px;
+}
+.suggested-event-list .host-info .wrap {
+  margin-left: 10px;
+}
+/*dashboard*/
+.main-filter {
+  padding: 10px 20px;
+  background-color: #ffeeeb;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+.main-filter h5 {
+  margin: 0 10px 0 0;
+}
+.main-filter .custom-nav-link.nav-link {
+  font-size: 12px;
+  padding: 10px !important;
+}
+.main-filter .custom-nav-link.active.nav-link {
+  background-color: #ed553b;
 }
