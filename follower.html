@@ -300,113 +300,32 @@
         </div>
       </header>
 
+      <!-- <div class="category-bar" id="category-bar">
+        <div class="container">
+          <div class="categories">
+            <a href="#">Categories <i class="fas fa-angle-down ml-2"></i></a>
+          </div>
+          <div class="input-with-icon">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search for Courses..." />
+          </div>
+        </div>
+      </div> -->
       <div role="main" class="main">
         <div class="container">
           <div class="row py-5">
-            <div class="col-lg-4">
-              <div class="profile-card">
-                <div class="cover-pic">
-                  <p>
-                    <i class="icons icon-badge text-white mr-1"></i>Super
-                    Learner
-                  </p>
-                  <img src="./images/simulation.jpg" alt="" />
-                </div>
-
-                <div class="profile-info">
-                  <div class="profile-info-icon">
-                    <img src="./images/frame.jpg" alt="" />
-                  </div>
-                  <div class="wrap">
-                    <h3>Shirley Setia</h3>
-                    <span>
-                      <img
-                        src="https://cdn.countryflags.com/thumbs/india/flag-400.png"
-                        alt=""
-                      />
-                      India | <i class="icons icon-globe mx-1"></i> English |
-                      <i class="fas fa-graduation-cap mx-1"></i> Mentor
-                    </span>
-                    <p>
-                      Open for Opportunities | Strategic Growth Enabler |
-                      Entrepreneur | Product Consultant | (14,000+ Connections)
-                    </p>
-
-                    <!-- <span>
-                <i class="icons icon-globe mr-1"></i>English
-              </span> -->
-                  </div>
-                </div>
-
-                <div class="profile-highlights">
-                  <p><strong>100+</strong> Followers</p>
-
-                  <p><strong>100+</strong> Followings</p>
-
-                  <p><strong>100+</strong> Posts</p>
-
-                  <p class="points"><strong>2.5K</strong> Points</p>
-                </div>
-
-                <div class="primary-profile-box">
-                  <h3>About me</h3>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since... <strong>see more</strong>
-                  </p>
-                </div>
-
-                <div class="primary-profile-box">
-                  <h3>Skills</h3>
-                  <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Javascript</li>
-                    <li>Jquery</li>
-                    <li>Photoshop</li>
-                    <li>Angular</li>
-                    <li>ReactJs</li>
-                    <li>Sketch</li>
-                  </ul>
-                </div>
-
-                <div class="primary-profile-box">
-                  <h3>Interests</h3>
-                  <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Javascript</li>
-                    <li>Jquery</li>
-                    <li>Photoshop</li>
-                    <li>Angular</li>
-                    <li>ReactJs</li>
-                    <li>Sketch</li>
-                  </ul>
-                </div>
-
-                <div class="primary-profile-box">
-                  <h3>Course Language</h3>
-                  <p>English</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8">
+            <div class="col-lg-9">
               <div class="tabs">
                 <div class="text-center mb-4">
                   <ul class="nav nav-tabs rounded-tabs">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#feeds" data-toggle="tab">
-                        Feeds
+                      <a class="nav-link" href="#followers" data-toggle="tab">
+                        Followers
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        href="#upcoming-event"
-                        data-toggle="tab"
-                      >
-                        Upcoming Event
+                      <a class="nav-link" href="#followings" data-toggle="tab">
+                        Followings
                       </a>
                     </li>
                   </ul>
@@ -414,356 +333,281 @@
                 <div
                   class="tab-content p-0 background-color-transparent box-shadow-none"
                 >
-                  <div id="feeds" class="tab-pane active">
-                    <div class="post-card">
-                      <div class="post-card--header">
-                        <div class="header-wrap">
-                          <div class="user">
-                            <img src="./images/simulation.jpg" alt="user" />
-                            <div class="wrap">
-                              <h3>Shubham Pandey</h3>
-                              <span>Yesterday 3:35 PM</span>
-                            </div>
-                          </div>
+                  <div id="followers" class="tab-pane active">
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Shubham Pandey</h3>
+                          <p>Sr. Web Designer</p>
+                        </div>
+                        <a href="javascript:void(0)" class="remove">
+                          <i class="far fa-trash-alt"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
 
-                          <i class="icons icon-options-vertical"></i>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Ravi Teja</h3>
+                          <p>Sr. Web Developer</p>
                         </div>
-                      </div>
-                      <div class="post-card--body">
-                        <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam…
-                        </p>
-                        <img src="./images/simulation.jpg" alt="Post" />
-                      </div>
-                      <div class="post-card--footer">
-                        <ul class="actions">
-                          <li>
-                            <a href="javascript:void(0)" class="active">
-                              <i class="far fa-thumbs-up mr-2"></i>
-                              <strong class="mr-2">Like</strong> 250
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">
-                              <i class="far fa-comment-alt mr-2"></i>
-                              <strong class="mr-2">Comment</strong> 14
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">
-                              <i class="fas fa-share mr-2"></i>
-                              <strong class="mr-2">Share</strong> 14
-                            </a>
-                          </li>
-                        </ul>
-                        <div class="comment-box">
-                          <img src="./images/simulation.jpg" alt="Post" />
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Write a comment here..."
-                          />
-                        </div>
-                      </div>
-                    </div>
+                        <!-- <a href="javascript:void(0)">Follow</a> -->
+                        <a href="javascript:void(0)" class="remove">
+                          <i class="fas fa-user-times"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
 
-                    <div class="post-card">
-                      <div class="post-card--header">
-                        <div class="header-wrap">
-                          <div class="user">
-                            <img src="./images/simulation.jpg" alt="user" />
-                            <div class="wrap">
-                              <h3>Shubham Pandey</h3>
-                              <span>Yesterday 3:35 PM</span>
-                            </div>
-                          </div>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Rohit Paul</h3>
+                          <p>Full Stack Developer</p>
+                        </div>
+                        <a href="javascript:void(0)" class="remove">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <!-- <a href="javascript:void(0)" class="border-color-transparent">Following</a> -->
+                      </figcaption>
+                    </figure>
 
-                          <i class="icons icon-options-vertical"></i>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Shubham Pandey</h3>
+                          <p>Sr. Web Designer</p>
                         </div>
-                      </div>
-                      <div class="post-card--body">
-                        <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam…
-                        </p>
-                        <img src="./images/simulation.jpg" alt="Post" />
-                      </div>
-                      <div class="post-card--footer">
-                        <ul class="actions">
-                          <li>
-                            <a href="javascript:void(0)" class="active">
-                              <i class="far fa-thumbs-up mr-2"></i>
-                              <strong class="mr-2">Like</strong> 250
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">
-                              <i class="far fa-comment-alt mr-2"></i>
-                              <strong class="mr-2">Comment</strong> 14
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">
-                              <i class="fas fa-share mr-2"></i>
-                              <strong class="mr-2">Share</strong> 14
-                            </a>
-                          </li>
-                        </ul>
-                        <div class="comment-box">
-                          <img src="./images/simulation.jpg" alt="Post" />
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Write a comment here..."
-                          />
-                        </div>
-                      </div>
-                    </div>
+                        <a href="javascript:void(0)" class="remove">
+                          <i class="far fa-trash-alt"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
 
-                    <div class="post-card">
-                      <div class="post-card--header">
-                        <div class="header-wrap">
-                          <div class="user">
-                            <img src="./images/simulation.jpg" alt="user" />
-                            <div class="wrap">
-                              <h3>Shubham Pandey</h3>
-                              <span>Yesterday 3:35 PM</span>
-                            </div>
-                          </div>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Ravi Teja</h3>
+                          <p>Sr. Web Developer</p>
+                        </div>
+                        <!-- <a href="javascript:void(0)">Follow</a> -->
+                        <a href="javascript:void(0)" class="remove">
+                          <i class="fas fa-user-times"></i>
+                        </a>
+                      </figcaption>
+                    </figure>
 
-                          <i class="icons icon-options-vertical"></i>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Rohit Paul</h3>
+                          <p>Full Stack Developer</p>
                         </div>
-                      </div>
-                      <div class="post-card--body">
-                        <p>
-                          Lorem ipsum dolor sit amet, consetetur sadipscing
-                          elitr, sed diam nonumy eirmod tempor invidunt ut
-                          labore et dolore magna aliquyam…
-                        </p>
-                        <img src="./images/simulation.jpg" alt="Post" />
-                      </div>
-                      <div class="post-card--footer">
-                        <ul class="actions">
-                          <li>
-                            <a href="javascript:void(0)" class="active">
-                              <i class="far fa-thumbs-up mr-2"></i>
-                              <strong class="mr-2">Like</strong> 250
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">
-                              <i class="far fa-comment-alt mr-2"></i>
-                              <strong class="mr-2">Comment</strong> 14
-                            </a>
-                          </li>
-                          <li>
-                            <a href="javascript:void(0)">
-                              <i class="fas fa-share mr-2"></i>
-                              <strong class="mr-2">Share</strong> 14
-                            </a>
-                          </li>
-                        </ul>
-                        <div class="comment-box">
-                          <img src="./images/simulation.jpg" alt="Post" />
-                          <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Write a comment here..."
-                          />
-                        </div>
-                      </div>
-                    </div>
+                        <a href="javascript:void(0)" class="remove">
+                          <i class="fas fa-times"></i>
+                        </a>
+                        <!-- <a href="javascript:void(0)" class="border-color-transparent">Following</a> -->
+                      </figcaption>
+                    </figure>
                   </div>
-                  <div id="upcoming-event" class="tab-pane">
-                    <div class="mb-3">
-                      <div class="heading-with-filter mb-3">
-                        <h4 class="d-flex align-items-center m-0">
-                          Event on 13th Dec 2020
-                        </h4>
-                        <a
-                          href="javascript:void(0)"
-                          class="font-weight-normal ls-normal"
-                          >View all</a
-                        >
+                  <div id="followings" class="tab-pane">
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
                       </div>
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="invitation-box">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="event-image">
-                                  <span>2 Hours Remaining</span>
-                                  <img src="./images/simulation.jpg" />
-                                  <i class="far fa-calendar-alt"></i>
-                                </div>
-                              </div>
-                              <div class="col-md-6 pl-0">
-                                <div class="event-box px-0">
-                                  <div class="wrap">
-                                    <h3>Learnsure Personal Event</h3>
-                                    <p>Knowledgebase</p>
-                                  </div>
-                                </div>
-                                <div class="hosted-by px-0">
-                                  <p class="font-weight-semibold">
-                                    Event hosted by
-                                  </p>
-                                  <div class="host-info">
-                                    <img src="./images/simulation.jpg" />
-                                    <div class="wrap">
-                                      <h3>Shubham Pandey</h3>
-                                      <p>02:00 PM</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="px-2 pt-1 pb-2">
-                              <a href="javascript:void(0)" class="req-sent">
-                                Request Sent
-                              </a>
-                            </div>
-                          </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Shubham Pandey</h3>
+                          <p>Sr. Web Designer</p>
                         </div>
-                        <div class="col-md-6">
-                          <div class="invitation-box">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="event-image">
-                                  <span>2 Hours Remaining</span>
-                                  <img src="./images/simulation.jpg" />
-                                  <i class="far fa-calendar-alt"></i>
-                                </div>
-                              </div>
-                              <div class="col-md-6 pl-0">
-                                <div class="event-box px-0">
-                                  <div class="wrap">
-                                    <h3>Learnsure Personal Event</h3>
-                                    <p>Knowledgebase</p>
-                                  </div>
-                                </div>
-                                <div class="hosted-by px-0">
-                                  <p class="font-weight-semibold">
-                                    Event hosted by
-                                  </p>
-                                  <div class="host-info">
-                                    <img src="./images/simulation.jpg" />
-                                    <div class="wrap">
-                                      <h3>Shubham Pandey</h3>
-                                      <p>02:00 PM</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                        <!-- <a href="javascript:void(0)">Follow</a> -->
+                      </figcaption>
+                    </figure>
 
-                            <div class="px-2 pt-1 pb-2">
-                              <a href="javascript:void(0)"> Request to Join </a>
-                            </div>
-                          </div>
-                        </div>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
                       </div>
-                    </div>
-
-                    <div class="mb-3">
-                      <div class="heading-with-filter mb-3">
-                        <h4 class="d-flex align-items-center m-0">
-                          Event on 12th Dec 2020
-                        </h4>
-                        <a
-                          href="javascript:void(0)"
-                          class="font-weight-normal ls-normal"
-                          >View all</a
-                        >
-                      </div>
-
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="invitation-box">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="event-image">
-                                  <span>2 Hours Remaining</span>
-                                  <img src="./images/simulation.jpg" />
-                                  <i class="far fa-calendar-alt"></i>
-                                </div>
-                              </div>
-                              <div class="col-md-6 pl-0">
-                                <div class="event-box px-0">
-                                  <div class="wrap">
-                                    <h3>Learnsure Personal Event</h3>
-                                    <p>Knowledgebase</p>
-                                  </div>
-                                </div>
-                                <div class="hosted-by px-0">
-                                  <p class="font-weight-semibold">
-                                    Event hosted by
-                                  </p>
-                                  <div class="host-info">
-                                    <img src="./images/simulation.jpg" />
-                                    <div class="wrap">
-                                      <h3>Shubham Pandey</h3>
-                                      <p>02:00 PM</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-
-                            <div class="px-2 pt-1 pb-2">
-                              <a href="javascript:void(0)" class="req-sent">
-                                Request Sent
-                              </a>
-                            </div>
-                          </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Ravi Teja</h3>
+                          <p>Sr. Web Developer</p>
                         </div>
-                        <div class="col-md-6">
-                          <div class="invitation-box">
-                            <div class="row">
-                              <div class="col-md-6">
-                                <div class="event-image">
-                                  <span>2 Hours Remaining</span>
-                                  <img src="./images/simulation.jpg" />
-                                  <i class="far fa-calendar-alt"></i>
-                                </div>
-                              </div>
-                              <div class="col-md-6 pl-0">
-                                <div class="event-box px-0">
-                                  <div class="wrap">
-                                    <h3>Learnsure Personal Event</h3>
-                                    <p>Knowledgebase</p>
-                                  </div>
-                                </div>
-                                <div class="hosted-by px-0">
-                                  <p class="font-weight-semibold">
-                                    Event hosted by
-                                  </p>
-                                  <div class="host-info">
-                                    <img src="./images/simulation.jpg" />
-                                    <div class="wrap">
-                                      <h3>Shubham Pandey</h3>
-                                      <p>02:00 PM</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
+                        <!-- <a href="javascript:void(0)">Follow</a> -->
+                      </figcaption>
+                    </figure>
 
-                            <div class="px-2 pt-1 pb-2">
-                              <a href="javascript:void(0)"> Request to Join </a>
-                            </div>
-                          </div>
-                        </div>
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
                       </div>
-                    </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Rohit Paul</h3>
+                          <p>Full Stack Developer</p>
+                        </div>
+                        <!-- <a href="javascript:void(0)" class="border-color-transparent">Following</a> -->
+                      </figcaption>
+                    </figure>
+
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Shubham Pandey</h3>
+                          <p>Sr. Web Designer</p>
+                        </div>
+                        <!-- <a href="javascript:void(0)">Follow</a> -->
+                      </figcaption>
+                    </figure>
+
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Ravi Teja</h3>
+                          <p>Sr. Web Developer</p>
+                        </div>
+                        <!-- <a href="javascript:void(0)">Follow</a> -->
+                      </figcaption>
+                    </figure>
+
+                    <figure class="people-meet">
+                      <div class="icon">
+                        <img
+                          src="./images/simulation.jpg"
+                          alt="People_to_meet"
+                        />
+                      </div>
+                      <figcaption>
+                        <div class="wrap">
+                          <h3>Rohit Paul</h3>
+                          <p>Full Stack Developer</p>
+                        </div>
+                        <!-- <a href="javascript:void(0)" class="border-color-transparent">Following</a> -->
+                      </figcaption>
+                    </figure>
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="heading-with-filter mb-2">
+                <h4 class="d-flex align-items-end m-0">Suggestions for you</h4>
+              </div>
+
+              <figure class="people-meet">
+                <div class="icon">
+                  <img src="./images/simulation.jpg" alt="People_to_meet" />
+                </div>
+                <figcaption>
+                  <div class="wrap">
+                    <h3>Shubham Pandey</h3>
+                    <p>Sr. Web Designer</p>
+                    <span>
+                      <i class="fas fa-book-reader"></i>
+                      Learner
+                    </span>
+                  </div>
+                  <a href="javascript:void(0)">
+                    <i class="fas fa-user-plus"></i>
+                  </a>
+                </figcaption>
+              </figure>
+
+              <figure class="people-meet">
+                <div class="icon">
+                  <img src="./images/simulation.jpg" alt="People_to_meet" />
+                </div>
+                <figcaption>
+                  <div class="wrap">
+                    <h3>Ravi Teja</h3>
+                    <p>Sr. Web Developer</p>
+                    <span>
+                      <i class="fas fa-graduation-cap"></i>
+                      Mentor
+                    </span>
+                  </div>
+                  <a href="javascript:void(0)">
+                    <i class="fas fa-user-plus"></i>
+                  </a>
+                </figcaption>
+              </figure>
+
+              <figure class="people-meet">
+                <div class="icon">
+                  <img src="./images/simulation.jpg" alt="People_to_meet" />
+                </div>
+                <figcaption>
+                  <div class="wrap">
+                    <h3>Rohit Paul</h3>
+                    <p>Full Stack Developer</p>
+                    <span>
+                      <i class="fas fa-chalkboard-teacher"></i>
+                      Trainer
+                    </span>
+                  </div>
+                  <a href="javascript:void(0)">
+                    <i class="fas fa-user-plus"></i>
+                  </a>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>

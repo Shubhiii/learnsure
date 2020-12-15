@@ -11,7 +11,8 @@ html {
 }
 
 body {
-  background-color: #fff;
+  /* background-color: #fff; */
+  background: #f5f9ff;
   color: #000;
   font-family: "Nunito Sans", sans-serif;
   font-size: 13px;
@@ -25,6 +26,7 @@ body a {
 
 .body {
   background-color: #fff;
+  background: #f5f9ff;
 }
 
 html.safari:not(.no-safari-overflow-x-fix) .body {
@@ -1258,7 +1260,8 @@ li {
   > ul
   > li:hover
   > a {
-  margin: 0 0.9rem;
+  /* margin: 0 0.9rem; */
+  margin: 0 0.7rem;
   font-family: "Poppins", sans-serif;
 }
 
@@ -1493,7 +1496,8 @@ html:not(.sticky-header-active)
 html.sticky-header-active #header .header-body {
   position: fixed;
   border-bottom-color: rgba(234, 234, 234, 0.5);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
 }
 
 html.sticky-header-active #header .header-body.header-body-bottom-border {
