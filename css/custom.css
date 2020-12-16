@@ -1838,6 +1838,118 @@ html.sticky-header-active .default-logo {
 }
 
 /*================================ style ===========================*/
+/***course-listing***/
+/*filter*/
+.filter-outer .course--filter {
+  padding-left: 20px !important;
+}
+.filter-outer .course--filter li + li {
+  /* padding-left: 20px !important; */
+  margin-top: 10px;
+}
+.filter-outer .course--filter li input {
+  margin-top: 0;
+}
+.filter-outer .course--filter li .star-rating {
+  color: #fff;
+}
+.filter-outer.primary-toggle .toggle-content ul li:first-child i {
+  position: static;
+  left: 0;
+  opacity: 1;
+  top: 0;
+}
+.filter-outer .course--filter li .star-rating i {
+  cursor: pointer;
+  color: #f6d55c;
+  opacity: 0.5 !important;
+}
+.filter-outer .course--filter li .star-rating i.active {
+  color: #f6d55c;
+  opacity: 1 !important;
+}
+.filter-outer .filter--label, .filter-outer .filter--count {
+  margin-left: 10px;
+}
+
+/*notification*/
+.notification {
+  margin-bottom: 10px;
+}
+.notification .notification--img {
+  position: relative;
+}
+.notification .notification--img .notification--icon {
+  position: absolute;
+  background-color: #ed553b;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: -8px;
+  right: -5px;
+  font-size: 12px;
+}
+.notification figcaption .wrap p {
+  margin: 0;
+  /* font-weight: 500; */
+  font-size: 16px;
+  line-height: 1;
+  color: #000;
+  opacity: 1;
+}
+.notification figcaption .wrap p span {
+  font-weight: 700;
+  display: inline-flex;
+  cursor: pointer;
+}
+.notification figcaption .wrap p.days {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.5;
+  margin-top: 5px;
+  line-height: 1;
+  color: #000;
+}
+.notification--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 10px 15px;
+  background-color: antiquewhite;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  margin-top: -10px;
+}
+.notification--footer p {
+  margin: 0;
+  font-size: 13px;
+}
+.notification--footer.invitation-intrest .button-group a {
+  line-height: 1;
+  padding: 5px 15px;
+  font-size: 12px;
+  border: 1px solid #ed553b;
+  border-radius: 50px;
+}
+.notification--footer.invitation-intrest .button-group a.yes {
+  background-color: #ed553b;
+  color: #fff;
+  margin-left: 5px;
+}
+/* .notification--footer.invitation-intrest .button-group a.yes:hover {
+  background-color: transparent;
+  color: #ed553b;
+} */
+.notification--footer.invitation-intrest .button-group a.no:hover {
+  background-color: #ed553b;
+  color: #fff;
+}
+
+
 /*feeds*/
 .followers {
   display: flex;

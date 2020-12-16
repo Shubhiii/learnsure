@@ -300,15 +300,68 @@ data-target=".header-nav-main nav"
             </h4>
           </div>
 
-          <div class="toggle primary-toggle" data-plugin-toggle>
+          <div class="toggle primary-toggle filter-outer" data-plugin-toggle>
             <section class="toggle active">
               <a class="toggle-title">
                 <span>Rating</span>
               </a>
               <div class="toggle-content">
-                <ul>
+                <ul class="course--filter flex-column align-items-start">
                   <li class="px-0">
-                    What You'll Get in This Course
+                    <input class="form-check-input" type="radio" name="rating" value="5star">
+                    <div class="star-rating d-flex">
+                      <div class="wrap ml-2">
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                      </div>
+                    </div>
+                    <span class="filter--label">5 & up</span>
+                    <span class="filter--count">(136)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="radio" name="rating" value="4star">
+                    <div class="star-rating d-flex">
+                      <div class="wrap ml-2">
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <span class="filter--label">4 & up</span>
+                    <span class="filter--count">(295)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="radio" name="rating" value="3star">
+                    <div class="star-rating d-flex">
+                      <div class="wrap ml-2">
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <span class="filter--label">3 & up</span>
+                    <span class="filter--count">(363)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="radio" name="rating" value="2star">
+                    <div class="star-rating d-flex">
+                      <div class="wrap ml-2">
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star active"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                    <span class="filter--label">2 & up</span>
+                    <span class="filter--count">(136)</span>
                   </li>
                 </ul>
               </div>
@@ -319,9 +372,26 @@ data-target=".header-nav-main nav"
                 <span>Course Duration</span>
               </a>
               <div class="toggle-content">
-                <ul>
+                <ul class="course--filter flex-column align-items-start">
                   <li class="px-0">
-                    What You'll Get in This Course
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration1">
+                    <span class="filter--label">0-2 Hours</span>
+                    <span class="filter--count">(17)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration2">
+                    <span class="filter--label">3-6 Hours</span>
+                    <span class="filter--count">(22)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration3">
+                    <span class="filter--label">7-16 Hours</span>
+                    <span class="filter--count">(47)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration4">
+                    <span class="filter--label">17+ Hours</span>
+                    <span class="filter--count">(50)</span>
                   </li>
                 </ul>
               </div>
@@ -332,9 +402,56 @@ data-target=".header-nav-main nav"
                 <span>Sub-Category</span>
               </a>
               <div class="toggle-content">
-                <ul>
+                <ul class="course--filter flex-column align-items-start">
                   <li class="px-0">
-                    What You'll Get in This Course
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration1">
+                    <span class="filter--label">Web Development</span>
+                    <span class="filter--count">(344)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration2">
+                    <span class="filter--label">Other in IT &amp; Software</span>
+                    <span class="filter--count">(32)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration3">
+                    <span class="filter--label">Programming Languages</span>
+                    <span class="filter--count">(29)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration4">
+                    <span class="filter--label">Mobile Development</span>
+                    <span class="filter--count">(6)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration1">
+                    <span class="filter--label">IT Certification</span>
+                    <span class="filter--count">(5)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration2">
+                    <span class="filter--label">Network &amp; Security</span>
+                    <span class="filter--count">(4)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration3">
+                    <span class="filter--label">Software Engineering</span>
+                    <span class="filter--count">(3)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration4">
+                    <span class="filter--label">Engineering</span>
+                    <span class="filter--count">(1)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration3">
+                    <span class="filter--label">Enterpreneurship</span>
+                    <span class="filter--count">(1)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration4">
+                    <span class="filter--label">Software Testing</span>
+                    <span class="filter--count">(1)</span>
                   </li>
                 </ul>
               </div>
@@ -345,9 +462,21 @@ data-target=".header-nav-main nav"
                 <span>Language</span>
               </a>
               <div class="toggle-content">
-                <ul>
+                <ul class="course--filter flex-column align-items-start">
                   <li class="px-0">
-                    What You'll Get in This Course
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration1">
+                    <span class="filter--label">English</span>
+                    <span class="filter--count">(265)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration2">
+                    <span class="filter--label">Hindi</span>
+                    <span class="filter--count">(32)</span>
+                  </li>
+                  <li class="px-0">
+                    <input class="form-check-input" type="checkbox" name="course-duration" value="duration3">
+                    <span class="filter--label">Tamil</span>
+                    <span class="filter--count">(29)</span>
                   </li>
                 </ul>
               </div>
