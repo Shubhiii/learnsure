@@ -262,7 +262,7 @@ html.sticky-header-active .default-logo {
   background-color: #fff;
   background-size: cover;
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
   margin-bottom: 35px;
   background-position: center center;
   transform: translateY(0);
@@ -336,6 +336,18 @@ html.sticky-header-active .default-logo {
   padding: 15px;
 }
 
+.course-thumbnail--header .star-rating {
+  color: #fff;
+}
+
+.course-thumbnail--header .star-rating i {
+  cursor: pointer;
+}
+
+.course-thumbnail--header .star-rating i.active {
+  color: #f6d55c;
+}
+
 .course-thumbnail--header .course-tag {
   background-color: #ed553b;
   color: #fff;
@@ -374,7 +386,7 @@ html.sticky-header-active .default-logo {
   left: 0;
   top: 0;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .course-thumbnail--header .user-info {
@@ -2894,4 +2906,278 @@ html.sticky-header-active .default-logo {
 
 .live-chat-row span {
   margin-top: 4px;
+}
+
+.pricing-block {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.pricing-block h3 {
+  margin: 0 0 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #000;
+}
+
+/* .inbox-sidebar {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  background-color: #fff;
+} */
+
+.inbox-sidebar {
+  height: calc(100vh - (100px + 27px + 16px + 24px + 24px));
+  overflow: auto;
+}
+
+.inbox-sidebar .people-meet {
+  border-left: 5px solid transparent;
+  cursor: pointer;
+}
+
+.inbox-sidebar .people-meet.active {
+  border-color: #ed553b;
+  pointer-events: none;
+}
+
+.inbox-sidebar .people-meet figcaption {
+  flex: auto;
+  width: calc(100% - 50px);
+}
+
+.inbox-sidebar .people-meet figcaption .wrap {
+  flex: auto;
+  width: 100%;
+}
+
+.inbox-sidebar .people-meet figcaption .wrap span {
+  /* line-height: ; */
+  display: block;
+}
+
+.inbox-content {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 15px;
+  height: calc(100vh - (100px + 27px + 16px + 24px + 24px));
+}
+
+.inbox-content .inbox-content-header {
+  display: flex;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+}
+
+/* .inbox-content .inbox-content-footer {
+  padding: 15px 0 0;
+} */
+
+.inbox-content .inbox-content-header img {
+  /* margin: 0 auto 10px; */
+  display: block;
+  width: 40px;
+  object-fit: cover;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.inbox-content h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.inbox .profile-card {
+  height: 100%;
+  /* width: 350px; */
+  text-align: center;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-left: auto;
+  /* border-left: 1px solid #eee; */
+}
+
+.inbox .profile-card > img {
+  margin: 0 auto 10px;
+  display: block;
+  width: 100px;
+  object-fit: cover;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.inbox .profile-card h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.inbox .profile-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.inbox .profile-card p {
+  margin: 5px 0 0;
+  color: #000;
+  line-height: normal;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+.inbox .profile-card span img {
+  width: 15px;
+  margin-right: 5px;
+  border-radius: 0;
+  height: auto;
+}
+
+.inbox .profile-card a {
+  border: 1px solid #ed553b;
+  /* display: block; */
+  margin-top: 15px;
+  border-radius: 50px;
+  line-height: 1;
+  padding: 8px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.inbox .profile-card a:hover {
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  background-color: #ed553b;
+}
+
+.conversation-list {
+  list-style: none;
+  /* overflow: auto; */
+  /* height: calc(100% - (56px + 167px + 1rem)) !important; */
+  padding: 0;
+  margin: 0;
+}
+
+.conversation-list li {
+  margin-bottom: 24px;
+}
+
+.conversation-list .chat-avatar {
+  float: left;
+  text-align: center;
+  width: 42px;
+}
+
+.conversation-list .chat-avatar img {
+  border-radius: 100%;
+  border: 1px solid #eee;
+  width: 100%;
+  height: 42px;
+  object-fit: cover;
+}
+
+.conversation-list .chat-avatar i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.conversation-list .conversation-text {
+  float: left;
+  font-size: 12px;
+  margin-left: 12px;
+  width: 70%;
+}
+
+.conversation-list .ctext-wrap {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background: #f7f7f7;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 12px;
+  position: relative;
+}
+
+.conversation-list .ctext-wrap i {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  position: relative;
+}
+
+.conversation-list .ctext-wrap p {
+  letter-spacing: normal;
+  color: #000;
+  font-size: 13px;
+  line-height: normal;
+  margin: 0;
+}
+
+.conversation-list .ctext-wrap::after {
+  right: 99%;
+  top: 0;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-top-color: #f7f7f7;
+  border-width: 8px;
+  margin-left: -1px;
+  border-right-color: #f7f7f7;
+}
+
+.conversation-list .odd .chat-avatar {
+  float: right !important;
+}
+
+.conversation-list .odd .ctext-wrap::after {
+  border-color: transparent;
+  border-left-color: #ffeeeb;
+  border-top-color: #ffeeeb;
+  left: 99% !important;
+}
+
+.conversation-list .odd .ctext-wrap {
+  background-color: #ffeeeb;
+}
+
+.conversation-list .odd .conversation-text {
+  float: right !important;
+  margin-right: 12px;
+  text-align: right;
+  width: 70% !important;
+}
+
+.inbox-content-body {
+  height: calc(100% - (56px + 143px));
+  overflow: auto;
+  margin: 0 -15px;
+  padding: 15px 15px 0;
 }

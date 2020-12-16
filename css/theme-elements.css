@@ -996,7 +996,7 @@ Theme Version:	8.0.0
 .progress {
   border-radius: 25px;
   height: 20px;
-  background: #fafafa;
+  background: #fff;
   overflow: visible;
 }
 
@@ -1095,7 +1095,7 @@ Theme Version:	8.0.0
 }
 
 .progress-bar-primary {
-  background-color: #ccc;
+  background-color: #f6d55c;
   color: #fff;
 }
 
@@ -5966,6 +5966,7 @@ label.required:after {
 
 .form-control {
   border-color: rgba(0, 0, 0, 0.09);
+  resize: none;
 }
 
 .form-control:not(.form-control-lg) {
@@ -10191,32 +10192,23 @@ html.boxed .nav-secondary.sticky-active {
 }
 
 /* Pricing Block Style */
-.pricing-block > .row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.pricing-block > .row > div:nth-child(1) {
-  padding: 27.2px;
-  padding: 1.7rem;
-}
 
 .pricing-block > .row > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 27.2px;
+  /* padding: 27.2px;
   padding: 1.7rem;
-  background: #f7f7f7;
-  text-align: center;
+  background: #f7f7f7; */
+  /* text-align: center; */
   border-left: 1px solid #dee2e6;
-  border-radius: 0 4px 4px 0;
+  /* border-radius: 0 4px 4px 0; */
 }
 
 .pricing-block .plan-price {
   display: flex;
   flex-direction: column;
-  background: #f7f7f7;
+  /* background: #f7f7f7; */
   border-top: 0;
   border-bottom: 0;
   text-align: center;
