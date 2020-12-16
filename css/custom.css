@@ -1914,7 +1914,7 @@ html.sticky-header-active .default-logo {
   line-height: 1;
   color: #000;
 }
-.notification--footer {
+.notification .notification--footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1924,27 +1924,27 @@ html.sticky-header-active .default-logo {
   border-radius: 6px;
   margin-top: -10px;
 }
-.notification--footer p {
+.notification .notification--footer p {
   margin: 0;
   font-size: 13px;
 }
-.notification--footer.invitation-intrest .button-group a {
+.notification .notification--footer.invitation-intrest .button-group a {
   line-height: 1;
   padding: 5px 15px;
   font-size: 12px;
   border: 1px solid #ed553b;
   border-radius: 50px;
 }
-.notification--footer.invitation-intrest .button-group a.yes {
+.notification .notification--footer.invitation-intrest .button-group a.yes {
   background-color: #ed553b;
   color: #fff;
   margin-left: 5px;
 }
-/* .notification--footer.invitation-intrest .button-group a.yes:hover {
+/* .notification .notification--footer.invitation-intrest .button-group a.yes:hover {
   background-color: transparent;
   color: #ed553b;
 } */
-.notification--footer.invitation-intrest .button-group a.no:hover {
+.notification .notification--footer.invitation-intrest .button-group a.no:hover {
   background-color: #ed553b;
   color: #fff;
 }
