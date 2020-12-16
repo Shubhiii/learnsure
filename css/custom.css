@@ -2821,3 +2821,77 @@ html.sticky-header-active .default-logo {
   display: block;
   margin-bottom: 5px;
 }
+
+.live-chat {
+  padding: 0 15px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.live-chat-body {
+  overflow: auto;
+  height: 445px;
+}
+
+.live-chat-footer {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  display: flex;
+  align-items: center;
+}
+
+.live-chat-footer img {
+  width: 50px;
+  display: block;
+  border: 1px solid #eee;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.live-chat-footer input {
+  width: 100%;
+  display: block;
+  border: none;
+  box-shadow: none;
+  padding: 0 15px;
+}
+
+.live-chat-footer input:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.live-chat-row {
+  display: flex;
+  padding: 15px 0;
+  align-items: flex-start;
+}
+
+.live-chat-row + .live-chat-row {
+  border-top: 1px solid #eee;
+}
+
+.live-chat-row img {
+  width: 50px;
+  display: block;
+  border: 1px solid #eee;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.live-chat-row h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.live-chat-row span {
+  margin-top: 4px;
+}
