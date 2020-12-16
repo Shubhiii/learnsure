@@ -2441,6 +2441,7 @@ html.sticky-header-active .default-logo {
 .course-includes ul li i {
   /* font-size: 24px; */
   /* color: #ed553b; */
+  color: #001436;
   margin-right: 5px;
   /* margin-bottom: 10px; */
 }
@@ -2501,4 +2502,93 @@ html.sticky-header-active .default-logo {
   color: #fca539;
   background: #fff;
   transition: all ease 0.3s;
+}
+
+.primary-toggle {
+  margin: 0;
+}
+
+.primary-toggle .toggle {
+  margin-top: 0;
+}
+
+.primary-toggle .toggle + .toggle {
+  margin-top: 5px;
+}
+
+.primary-toggle .toggle > label,
+.primary-toggle .toggle > .toggle-title {
+  background: #fff;
+  border-left-color: #ed553b;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  color: #000;
+  user-select: none;
+  padding: 15px 40px 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.primary-toggle .toggle > .toggle-title span {
+  font-weight: 700;
+}
+
+.primary-toggle .toggle > .toggle-title em {
+  font-style: normal;
+  opacity: 0.7;
+}
+
+.primary-toggle .toggle-content {
+  padding: 15px;
+}
+
+.primary-toggle .toggle-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.primary-toggle .toggle-content ul + ul {
+  margin-top: 10px;
+}
+
+.primary-toggle .toggle-content ul li {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.primary-toggle .toggle-content ul li:first-child {
+  flex-grow: 1;
+  padding: 0 20px;
+}
+
+.primary-toggle .toggle-content ul li:first-child i {
+  position: absolute;
+  left: 0;
+  /* opacity: 0.7; */
+  top: 5px;
+}
+
+.primary-toggle .toggle-content ul li:first-child a {
+  color: #000;
+  /* display: block; */
+  /* text-decoration: underline; */
+}
+
+.primary-toggle .toggle-content ul li span {
+  font-weight: 500;
+}
+
+.primary-toggle .toggle-content ul li a {
+  display: block;
+}
+
+.primary-toggle .toggle-content ul li em {
+  font-style: normal;
+  margin-left: 25px;
+  opacity: 0.7;
 }
