@@ -245,9 +245,12 @@ window.theme.fn = {
       979: {
         items: 3,
       },
-      // 1199: {
-      //   items: 4,
-      // },
+      1199: {
+        items: 4,
+        nav: true,
+        margin: 15,
+        loop: false,
+      },
     },
     navText: [],
   };
