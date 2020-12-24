@@ -259,7 +259,7 @@
 
 .filter-modal .modal-header {
   border-bottom-color: #EEEEEE;
-  background-color: #FAFAFA;
+  background-color: #fff;
   flex-flow: row-reverse;
   align-items: center;
 }
@@ -288,16 +288,16 @@
   overflow-y: scroll;
 }
 
-.filter-modal .modal-body .form-check {
+.filter-modal .modal-body .custom-checkbox{
   padding: 15px 15px 15px 1.8rem;
 }
 
-.filter-modal .modal-body .form-check+.form-check {
+.filter-modal .modal-body .custom-checkbox + .custom-checkbox{
   border-top: 1px solid #eee;
 }
 
-.filter-modal .modal-body .form-check-input {
-  margin-left: -1.8rem;
+.filter-modal .modal-body .custom-checkbox .custom-control-label::before, .filter-modal .modal-body .custom-checkbox .custom-control-label::after {
+  left: -1.8rem;
 }
 
 .filter-modal .modal-footer .btn {
@@ -309,6 +309,11 @@
 .list-dropdown > li > a {
   /* min-width: 350px; */
   padding: 0 !important;
+}
+
+.list-dropdown > li > a:hover {
+  background-color: #eee !important;
+  color: #000 !important;
 }
 
 .list-dropdown .btn {
@@ -352,8 +357,8 @@
 }
 
 .course-list--start {
-  color: #ed553b;
-    font-weight: 600;
+  color: var(--greenColor);
+    /* font-weight: 600; */
 }
 
 .course-list--progress {
