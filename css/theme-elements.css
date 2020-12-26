@@ -2678,6 +2678,10 @@ html.ie9
   pointer-events: none;
 }
 .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-carousel.nav-default .owl-nav button.owl-next {
   right: -90px;
 }
 
@@ -2729,14 +2733,14 @@ html.ie9
 .owl-carousel.show-nav-title .owl-nav {
   top: 0;
   right: 0;
-  margin-top: -25px;
+  margin-top: -33px;
   width: auto;
 }
 
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"],
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"]:hover,
 .owl-carousel.show-nav-title .owl-nav button[class*="owl-"]:active {
-  font-size: 18px;
+  font-size: 16px;
   background: transparent !important;
   width: 18px;
 }
@@ -14278,7 +14282,7 @@ small,
 /* Paragraphs */
 p {
   color: #6d6d6d;
-  line-height: 26px;
+  line-height: normal;
   margin: 0 0 20px;
 }
 
