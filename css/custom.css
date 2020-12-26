@@ -724,7 +724,7 @@ html.sticky-header-active .default-logo {
 }
 
 .user-structure .content {
-  background-image: url("https://learnsure.ai/wp-content/uploads/2020/12/future-screen-tinypng.jpg");
+  background-image: url("images/banner-bg.jpg");
   padding: 0 75px;
   width: calc(100% - 614px);
   background-position: 100%;
@@ -802,7 +802,7 @@ html.sticky-header-active .default-logo {
 }
 
 .user-info-page {
-  background-image: url("https://learnsure.ai/wp-content/uploads/2020/09/final-lms-screen-desktop.jpg");
+  background-image: url("../images/other/final-lms-screen-desktop.jpg");
   padding: 0 75px;
   background-position: 100%;
   background-repeat: no-repeat;
