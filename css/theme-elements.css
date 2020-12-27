@@ -2681,8 +2681,26 @@ html.ie9
   right: 0;
 }
 
+.owl-carousel.nav-default .owl-dots {
+  /* position: absolute;
+  left: 0;
+  margin: 0; */
+  justify-content: flex-start;
+  /* flex-grow: 1; */
+}
+
+.owl-carousel.nav-default .owl-nav button.owl-prev:before,
+.owl-carousel.nav-default .owl-nav button.owl-next:before {
+  font-size: 12px;
+}
+
 .owl-carousel.nav-default .owl-nav button.owl-next {
-  right: -90px;
+  right: 0;
+}
+
+.owl-carousel.nav-default .owl-nav button.owl-prev {
+  right: 35px;
+  left: auto;
 }
 
 .owl-carousel .owl-nav button.owl-next:before {

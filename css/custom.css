@@ -2,6 +2,7 @@
   --primaryFont: "Poppins", sans-serif;
   --greenColor: #23a95e;
   --primaryColor: #0077ff;
+  --secondaryColor: #001436;
   --yellowColor: #f6d55c;
   --blackColor: #000000;
   --orangeColor: #ed553b;
@@ -384,6 +385,10 @@ html.sticky-header-active .default-logo {
 .course-thumbnail.style-3 .course-thumbnail--body p {
   color: #fff;
 }
+.course-thumbnail .course-thumbnail--footer {
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+}
 
 .course-thumbnail.style-2 .course-thumbnail--footer {
   border: none !important;
@@ -465,6 +470,7 @@ html.sticky-header-active .default-logo {
   left: 15px;
   padding: 0 15px;
   height: 24px;
+  font-weight: 500;
   border-radius: 4px;
   font-size: 11px;
 }
@@ -934,15 +940,20 @@ html.sticky-header-active .default-logo {
 }
 
 .category-bar {
-  background: #fff;
+  background: var(--secondaryColor);
   position: sticky;
   top: 100px;
   color: #000;
   z-index: 99;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
   /* margin-top: -1px; */
-  padding: 0 10px;
+  padding: 6px 10px;
   transition: top ease 0.3s;
+}
+
+.category-bar .ls-btn {
+  height: 34px;
+  padding: 0 15px;
 }
 
 .category-bar .filter {
@@ -959,7 +970,7 @@ html.sticky-header-active .default-logo {
   width: 90px;
   justify-content: center;
   border-radius: 4px;
-  margin-left: 5px;
+  /* margin-right: 10px; */
   letter-spacing: normal;
 }
 
@@ -1031,7 +1042,7 @@ html.sticky-header-active .default-logo {
 }
 
 .category-bar ul li a {
-  color: #000;
+  color: #fff;
   font-size: 13px;
   display: block;
   padding: 15px 25px;
@@ -1055,11 +1066,11 @@ html.sticky-header-active .default-logo {
 
 .category-bar ul li a.active {
   /* border-bottom-color: #ed553b; */
-  color: var(--primaryColor);
+  color: #fff;
 }
 
 .category-bar ul li a.active:after {
-  background-color: var(--primaryColor);
+  background-color: #fff;
 }
 
 .category-bar .btn {
@@ -1075,16 +1086,16 @@ html.sticky-header-active .default-logo {
 
 #header .header-nav-main nav > ul > li > a > img {
   border-radius: 50%;
-  width: 50px;
-  border: 5px solid rgba(255, 255, 255, 0.2);
+  width: 35px;
+  border: 1px solid #eee;
   object-fit: cover;
-  height: 50px;
+  height: 35px;
   margin-right: 10px;
 }
 
 #header .header-nav-main nav > ul > li > a > p {
   font-size: 12px;
-  color: #fff;
+  color: #000;
   line-height: 1;
   font-weight: 400;
   margin: 0;
@@ -1101,14 +1112,14 @@ html.sticky-header-active .default-logo {
 
 #header .header-nav-main nav > ul > li > a .count {
   position: absolute;
-  background: #fff;
+  background: var(--primaryColor);
   line-height: 1;
   right: -10px;
   font-size: 12px;
   top: -10px;
   padding: 0 2px;
   height: 20px;
-  color: var(--primaryColor);
+  color: #fff;
   min-width: 20px;
   border-radius: 50px;
   display: flex;
@@ -1121,7 +1132,7 @@ html.sticky-header-active .default-logo {
   font-size: 14px;
   font-weight: 600;
   margin-top: 3px;
-  color: #fff;
+  color: var(--greenColor);
 }
 
 .input-with-icon {
@@ -1156,17 +1167,47 @@ html.sticky-header-active .default-logo {
   align-items: center;
 }
 
+.owl-carousel.nav-default {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.owl-carousel.nav-default .owl-stage-outer {
+  width: 100%;
+}
+
+.owl-carousel.nav-default .owl-nav {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  position: static;
+  transform: none;
+  /* order: 3; */
+  width: auto;
+  margin-top: 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.owl-carousel.nav-default .owl-nav button + button {
+  margin-left: 5px;
+}
+
 .owl-carousel.nav-default .owl-nav button.owl-next,
 .owl-carousel.nav-default .owl-nav button.owl-prev {
   color: #fff;
   background-color: var(--primaryColor);
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   border-radius: 4px;
+  transform: none;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
   display: flex;
   align-items: center;
   justify-content: center;
+  position: static;
 }
 
 .owl-carousel.nav-default .owl-nav button:hover {
@@ -1326,9 +1367,9 @@ html.sticky-header-active .default-logo {
   background-color: #fff;
   /* box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04); */
   /* background-color: #fff; */
-  border: 1px solid #eee;
-  border-radius: 6px;
-  overflow: hidden;
+  /* border: 1px solid #eee; */
+  /* border-radius: 6px; */
+  /* overflow: hidden; */
 }
 
 .invitation-box .invitation-intrest {
@@ -1336,30 +1377,31 @@ html.sticky-header-active .default-logo {
   align-items: center;
   justify-content: space-between;
   /* background-color: #f1f1f1; */
-  border-radius: 6px;
+  /* border-radius: 6px; */
   /* margin-top: 15px; */
-  padding: 10px;
-  background-color: #fff;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  /* background-color: #eee; */
   margin-top: 5px;
 }
 
 .invitation-box .event-box {
   /* border-bottom: 1px solid #eee; */
   /* margin-bottom: 5px; */
-  /* display: flex;
-  align-items: flex-start; */
-  background-color: #fff;
-  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+  /* background-color: #fff; */
+  /* padding: 10px; */
 }
 
 .invitation-box .hosted-by {
-  padding: 5px 10px 6px;
+  padding: 15px 0;
   background-color: #fff;
   /* border-bottom: 1px solid #eee; */
 }
 
 .invitation-box .event-box i {
-  background-color: #ed553b;
+  background-color: var(--primaryColor);
   color: #fff;
   width: 35px;
   height: 35px;
@@ -1395,25 +1437,26 @@ html.sticky-header-active .default-logo {
 
 .invitation-box .invitation-intrest .button-group a {
   line-height: 1;
-  padding: 5px 10px;
-  font-size: 12px;
-  border: 1px solid #ed553b;
-  border-radius: 50px;
+  /* padding: 5px 10px; */
+  font-size: 16px;
+  color: #000;
+  /* border: 1px solid var(--greenColor); */
+  /* border-radius: 50px; */
 }
 
 .invitation-box .invitation-intrest .button-group a + a {
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
-.invitation-box .invitation-intrest .button-group a.yes {
-  background-color: #ed553b;
-  color: #fff;
-}
+/* .invitation-box .invitation-intrest .button-group a.yes { */
+/* background-color: var(--greenColor); */
+/* color: var(--greenColor); */
+/* } */
 
-.invitation-box .invitation-intrest .button-group a.no {
-  border-color: #ed553b;
-  color: #ed553b;
-}
+/* .invitation-box .invitation-intrest .button-group a.no { */
+/* border-color: var(--greenColor); */
+/* color: var(--likeColor); */
+/* } */
 
 .invitation-box .hosted-by p {
   color: #000;
@@ -2218,7 +2261,8 @@ html.sticky-header-active .default-logo {
 }
 
 #header .header-nav-main.header-nav-main-text-size-2 nav > ul > li > a.current {
-  color: #ed553b;
+  background-color: var(--greenColor);
+  color: #fff;
 }
 
 /* #header
@@ -3523,6 +3567,21 @@ html.sticky-header-active .default-logo {
   margin-bottom: 20px;
 }
 
+.people-to-meet .primary-box-header > ul {
+  width: 100%;
+  margin-top: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.people-to-meet .primary-box-header > ul > li > a {
+  font-size: 13px;
+}
+
+.people-to-meet .owl-carousel.show-nav-title .owl-nav {
+  margin-top: -70px;
+}
+
 /* .primary-box-header * {
   position: relative;
   z-index: 1;
@@ -3548,6 +3607,13 @@ html.sticky-header-active .default-logo {
   /* letter-spacing: normal; */
 }
 
+.primary-box-header h3 a {
+  color: var(--greenColor);
+  line-height: normal;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
 .primary-box-header > ul {
   list-style: none;
   margin: 0;
@@ -3567,6 +3633,10 @@ html.sticky-header-active .default-logo {
 
 .primary-box-header > ul > li:last-child {
   padding-right: 0;
+}
+
+.primary-box-header > ul > li:first-child {
+  padding-left: 0;
 }
 
 .primary-box-header > ul > li > a {
@@ -3639,16 +3709,23 @@ html.sticky-header-active .default-logo {
 .primary-user-box a {
   background-color: var(--greenColor);
   color: #fff;
-  margin: 10px auto 0;
+  margin: 15px auto 0;
+  transition: all ease-in-out 0.3s;
   display: flex;
   align-items: center;
-  height: 24px;
+  height: 30px;
   line-height: 1;
   border-radius: 4px;
   justify-content: center;
   font-size: 12px;
   padding: 0;
   width: 90px;
+}
+
+.primary-user-box a:hover {
+  background-color: #1f9452;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
 }
 
 .overflow-wrap {
