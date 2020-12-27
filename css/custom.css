@@ -298,7 +298,7 @@ html.sticky-header-active .default-logo {
 
 .course-thumbnail.style-2 .style-2-wrap {
   background-color: rgba(0, 0, 0, 0.5);
-  top: 142px;
+  top: 135px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -582,7 +582,7 @@ html.sticky-header-active .default-logo {
 }
 
 .course-thumbnail--footer ul li {
-  width: calc(100% / 2);
+  /* width: calc(100% / 2); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3731,4 +3731,83 @@ html.sticky-header-active .default-logo {
 .overflow-wrap {
   overflow: auto;
   margin: 0 -20px;
+}
+
+.suites-card {
+  display: flex;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+.suites-card .suites-card--header {
+  width: 50%;
+  /* border-right: 1px solid #eee; */
+  /* padding: 15px; */
+  /* background-color: #eee; */
+}
+
+.suites-card .suites-card--header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.suites-card .suites-card--body {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  /* background-color: #f1f1f1; */
+  flex-direction: column;
+  width: 50%;
+}
+
+.suites-card .suites-card--body .suit-icon {
+  /* position: absolute; */
+  /* top: 15px; */
+  /* transform: translateX(-50%); */
+  /* left: -35px; */
+  z-index: 1;
+  background-color: #fff;
+  padding: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  border: 1px solid #eee;
+  height: 70px;
+}
+
+.suites-card .suites-card--body {
+  padding: 15px;
+}
+
+.suites-card .suites-card--body h3 {
+  letter-spacing: normal;
+  font-weight: 600;
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: normal;
+  text-transform: none;
+}
+
+.suites-card .suites-card--body p {
+  font-size: 13px;
+  margin: 0;
+  line-height: normal;
+}
+
+.suites-card .suites-card--body .specialization {
+  background-color: var(--greenColor);
+  margin-top: 10px;
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 11px;
+  justify-content: center;
+  height: 35px;
+  font-weight: 500;
 }

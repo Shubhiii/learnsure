@@ -246,7 +246,7 @@ window.theme.fn = {
         items: 3,
       },
       1199: {
-        items: 3,
+        // items: "",
         nav: true,
         margin: 15,
         loop: false,
