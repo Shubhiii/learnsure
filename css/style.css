@@ -463,3 +463,185 @@
   background-color: #df472d;
   color: #fff;
 }
+
+
+/*micro-learning*/
+.micro-learning {
+  background-color: #fff;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 35px;
+  background-position: center center;
+  transform: translateY(0);
+  transition: all ease-in-out 0.3s;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* .micro-learning img {
+  height: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+
+.micro-learning:hover .micro-learning--header img {
+  transform: scale(1.2);
+  transition: all ease-in-out 0.3s;
+} */
+
+.micro-learning.style-3 {
+  background-color: #ed553b;
+}
+
+.micro-learning.style-2 .micro-learning--header::before,
+.micro-learning.style-3 .micro-learning--header::before {
+  display: none;
+}
+
+.micro-learning.style-2:before {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.micro-learning.style-2 * {
+  position: relative;
+  z-index: 1;
+}
+
+.micro-learning.style-2 .micro-learning--body h3,
+.micro-learning.style-2 .micro-learning--body p,
+.micro-learning.style-2 .micro-learning--footer ul li,
+.micro-learning.style-3 .micro-learning--body h3,
+.micro-learning.style-3 .micro-learning--body p {
+  color: #fff;
+}
+
+.micro-learning--header {
+  height: 150px;
+  position: relative;
+  display: flex;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.micro-learning--header .course-tag {
+  background-color: #ed553b;
+  color: #fff;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
+.micro-learning--header .responses {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  font-weight: 600;
+}
+
+.micro-learning--header * {
+  position: relative;
+  z-index: 1;
+}
+
+.micro-learning--header::before {
+  content: "";
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.micro-learning--header .icon-outer i {
+  color: #fff;
+  font-size: 16px;
+}
+
+.micro-learning--body {
+  padding: 15px;
+  text-align: left;
+}
+
+.micro-learning--body h3 {
+  letter-spacing: normal;
+  font-weight: 600;
+  margin: 0 0 5px;
+  font-size: 16px;
+  line-height: normal;
+  text-transform: none;
+}
+
+.micro-learning--body p {
+  font-size: 13px;
+  margin: 0;
+  line-height: normal;
+}
+
+.micro-learning--footer {
+  border-top: 1px solid #eee;
+    /* margin-top: 15px; */
+}
+.micro-learning--footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.micro-learning--footer ul li {
+  width: calc(100% / 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 15px;
+}
+
+.micro-learning--footer ul li + li {
+  border-left: 1px solid #eee;
+}
+
+.micro-learning--footer ul li i {
+  margin-right: 8px;
+}
+
+.micro-learning--footer ul li i.fas.fa-heart {
+  color: var(--likeColor);
+}
+
+/*colors*/
+.micro-learning.color-style1 .micro-learning--header .course-tag {
+  background-color: var(--primaryColor);
+}
+.micro-learning.color-style2 .micro-learning--header .course-tag {
+  background-color: var(--greenColor);
+}
+.micro-learning.color-style3 .micro-learning--header .course-tag {
+  background-color: #fff;
+  color: var(--primaryColor);
+}
+.micro-learning.color-style4 .micro-learning--header .course-tag {
+  background-color: #fff;
+  color: var(--greenColor);
+}
