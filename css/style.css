@@ -1,16 +1,10 @@
-.skillset
-  .select2-container--default.select2-container--focus
-  .select2-selection--multiple,
-.skillset .select2-container--default .select2-selection--multiple {
+.skillset .select2-container--default.select2-container--focus .select2-selection--multiple, .skillset .select2-container--default .select2-selection--multiple {
   border: 1px solid rgba(0, 0, 0, 0.09);
   min-height: 60px;
   height: auto;
 }
 
-.skillset
-  .select2-container--default
-  .select2-selection--multiple
-  .select2-selection__choice {
+.skillset .select2-container--default .select2-selection--multiple .select2-selection__choice {
   padding: 10px;
   background: #eee;
   margin: 10px 10px 0 0;
@@ -22,20 +16,14 @@
   color: #666;
 }
 
-.skillset
-  .select2-container--default
-  .select2-selection--multiple
-  .select2-selection__choice__remove {
+.skillset .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   font-weight: lighter;
   margin-right: 0;
   font-size: 20px;
   margin-left: 10px;
 }
 
-.skillset
-  .select2-container--default
-  .select2-selection--multiple
-  .select2-selection__rendered {
+.skillset .select2-container--default .select2-selection--multiple .select2-selection__rendered {
   padding: 0 10px 10px 10px;
   align-items: center;
   display: flex;
@@ -227,8 +215,7 @@
 
 /*right sidebar*/
 
-.modal.left .modal-dialog,
-.modal.right .modal-dialog {
+.modal.left .modal-dialog, .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
   width: 320px;
@@ -239,8 +226,7 @@
   transform: translate3d(0%, 0, 0);
 }
 
-.modal.left .modal-content,
-.modal.right .modal-content {
+.modal.left .modal-content, .modal.right .modal-content {
   height: 100%;
   overflow-y: auto;
 }
@@ -306,12 +292,11 @@
   padding: 15px 15px 15px 1.8rem;
 }
 
-.filter-modal .modal-body .custom-checkbox + .custom-checkbox {
+.filter-modal .modal-body .custom-checkbox+.custom-checkbox {
   border-top: 1px solid #eee;
 }
 
-.filter-modal .modal-body .custom-checkbox .custom-control-label::before,
-.filter-modal .modal-body .custom-checkbox .custom-control-label::after {
+.filter-modal .modal-body .custom-checkbox .custom-control-label::before, .filter-modal .modal-body .custom-checkbox .custom-control-label::after {
   left: -1.8rem;
 }
 
@@ -321,7 +306,8 @@
 }
 
 /*course-list*/
-.list-dropdown > li > a {
+
+.list-dropdown>li>a {
   /* min-width: 350px; */
   padding: 0 !important;
 }
@@ -380,9 +366,11 @@
 }
 
 /*notification-list*/
+
 .notification-list .course-list--img {
   width: 62px;
 }
+
 .notification-list .course-list--img img {
   display: inline-flex;
   align-items: center;
@@ -393,6 +381,7 @@
   width: 62px;
   height: 62px;
 }
+
 .notification-list .notification--time {
   color: #73726c;
   overflow: hidden;
@@ -475,6 +464,7 @@
 }
 
 /*micro-learning*/
+
 .micro-learning {
   background-color: #fff;
   background-size: cover;
@@ -504,8 +494,7 @@
   background-color: #ed553b;
 }
 
-.micro-learning.style-2 .micro-learning--header::before,
-.micro-learning.style-3 .micro-learning--header::before {
+.micro-learning.style-2 .micro-learning--header::before, .micro-learning.style-3 .micro-learning--header::before {
   display: none;
 }
 
@@ -525,10 +514,7 @@
   z-index: 1;
 }
 
-.micro-learning.style-2 .micro-learning--body h3,
-.micro-learning.style-2 .micro-learning--body p,
-.micro-learning.style-3 .micro-learning--body h3,
-.micro-learning.style-3 .micro-learning--body p {
+.micro-learning.style-2 .micro-learning--body h3, .micro-learning.style-2 .micro-learning--body p, .micro-learning.style-3 .micro-learning--body h3, .micro-learning.style-3 .micro-learning--body p {
   color: #fff;
 }
 
@@ -608,6 +594,7 @@
 /* .micro-learning--footer {
   border-top: 1px solid #eee;
 } */
+
 .micro-learning--footer ul {
   display: flex;
   align-items: center;
@@ -627,7 +614,7 @@
   color: #000;
 }
 
-.micro-learning--footer ul li + li {
+.micro-learning--footer ul li+li {
   /* border-left: 1px solid #eee; */
   margin-left: 0;
   background: #f04646;
@@ -643,17 +630,173 @@
 }
 
 /*colors*/
+
 .micro-learning.color-style1 .micro-learning--header .course-tag {
   background-color: var(--primaryColor);
 }
+
 .micro-learning.color-style2 .micro-learning--header .course-tag {
   background-color: var(--greenColor);
 }
+
 .micro-learning.color-style3 .micro-learning--header .course-tag {
   background-color: #fff;
   color: var(--primaryColor);
 }
+
 .micro-learning.color-style4 .micro-learning--header .course-tag {
   background-color: #fff;
   color: var(--greenColor);
+}
+
+/*overwrite css*/
+
+/*about*/
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+
+/*global*/
+
+/* p {
+  line-height: 24px !important;
+} */
+
+/*footer*/
+
+.list li {
+  font-size: 13px;
+}
+
+#footer a:not(.btn), #footer .footer-copyright p {
+  font-size: 12px;
+}
+
+/*more-info*/
+
+.tab-content .button-group {
+  border-top: 0;
+  padding: 15px 20px;
+  margin: 1.5rem -1.5rem -1.5rem;
+  background-color: #ed553b;
+  background-color: #fbf5e8;
+}
+
+.user-info-page .tab-pane {
+  height: 355px;
+  padding-right: 20px;
+}
+
+.user-info-page .success-msg {
+  height: 100%;
+  text-align: center;
+}
+
+.user-info-page .success-msg .btn-orange:hover {
+  border-color: #ed553b;
+}
+
+.user-info-page .form-control-lg, .user-info-page .input-group-text {
+  font-size: 14px;
+  height: 42px !important;
+}
+
+/*download-app*/
+
+.download-app {
+  margin-top: 50px;
+}
+
+.download-app--btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-app--btn img {
+  width: 49%;
+  /* margin-right: 2%; */
+}
+
+.download-app--btn img+img {
+  margin-left: 2%;
+}
+
+/*activities*/
+
+.activity-box ul li a {
+  padding: 2px 10px;
+  border: 0;
+  font-size: 12px;
+}
+
+/*notification*/
+
+.notification {
+  display: flex;
+  padding: 15px;
+  z-index: 2;
+  margin: 0;
+}
+
+.notification--img .icon img {
+  width: 50px;
+  display: block;
+  /* margin: 0 auto 10px; */
+  border: 1px solid #eee;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.notification .notification--content {
+  padding-left: 15px;
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  justify-content: space-between
+}
+
+.notification-outer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.notification-outer .notification--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 15px 10px 15px;
+  background-color: antiquewhite;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 6px;
+  margin-top: -10px;
+  z-index: 1;
+}
+
+.notification-outer .notification--footer p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.notification-outer .notification--footer.invitation-intrest .button-group a {
+  line-height: 1;
+  padding: 5px 15px;
+  font-size: 12px;
+  border: 1px solid #ed553b;
+  border-radius: 50px;
+}
+
+.notification-outer .notification--footer.invitation-intrest .button-group a.yes {
+  background-color: #ed553b;
+  color: #fff;
+  margin-left: 5px;
+}
+
+.notification-outer .notification--footer.invitation-intrest .button-group a.no:hover {
+  background-color: #ed553b;
+  color: #fff;
 }

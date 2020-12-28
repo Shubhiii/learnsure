@@ -245,7 +245,7 @@ html.sticky-header-active
   > ul
   > li
   > a.current {
-  color: #ed553b;
+  color: #fff;
 }
 
 html:not(.sticky-header-active) .sticky-logo {

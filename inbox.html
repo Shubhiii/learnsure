@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/demos/demo-landing.css">
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- Head Libs -->
   <script src="vendor/modernizr/modernizr.min.js"></script>
 </head>
@@ -41,246 +42,609 @@
   </div>
   <div class="body">
     <header
-    id="header"
-    class="header-effect-shrink"
-    data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': true, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}"
-    >
-    <div class="header-body border-top-0">
-      <div class="header-container container">
-        <div class="header-row">
-          <div class="header-column">
+        id="header"
+        class="header-effect-shrink"
+        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': true, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}"
+      >
+        <div class="header-body border-top-0">
+          <div class="header-container container">
             <div class="header-row">
-              <div
-              class="header-logo appear-animation"
-              data-appear-animation="fadeIn"
-              data-plugin-options="{'accY': 100}"
-              >
-              <a href="/" class="goto-top">
-                <img
-                alt="learnsure"
-                width="180"
-                height="37"
-                data-sticky-top="0"
-                src="img/lazy.png"
-                data-plugin-lazyload
-                data-plugin-options="{'threshold': 500}"
-                data-original="images/logo.svg"
-                />
-              </a>
+              <div class="header-column">
+                <div class="header-row">
+                  <div
+                    class="header-logo appear-animation"
+                    data-appear-animation="fadeIn"
+                    data-plugin-options="{'accY': 100}"
+                  >
+                    <a href="/" class="goto-top">
+                      <img
+                        alt="learnsure"
+                        width="180"
+                        height="37"
+                        data-sticky-top="0"
+                        src="img/lazy.png"
+                        data-plugin-lazyload
+                        data-plugin-options="{'threshold': 500}"
+                        data-original="images/logo.svg"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="header-column justify-content-end flex-grow-1">
+                <div class="header-row">
+                  <div
+                    class="header-nav flex-grow-1 header-nav-links header-nav-light-text header-nav-dropdowns-dark"
+                  >
+                    <div
+                      class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1 appear-animation"
+                      data-appear-animation="fadeIn"
+                      data-plugin-options="{'accY': 100}"
+                    >
+                      <nav class="collapse">
+                        <ul class="nav nav-pills">
+                          <li class="dropdown">
+                            <a
+                              class="dropdown-toggle"
+                              href="javascript:void(0)"
+                            >
+                              Categories
+                            </a>
+
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="/">
+                                  <i class="icon-briefcase icons mr-1"></i>
+                                  Suites
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="/">
+                                  <i class="icon-screen-desktop icons mr-1"></i>
+                                  Courses
+                                </a>
+                              </li>
+                              <li class="dropdown-submenu">
+                                <a class="dropdown-item" href="/">
+                                  <i class="icon-organization mr-1 icons"></i>
+                                  Microlearning
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li>
+                                    <a class="dropdown-item" href="/">
+                                      <i class="fas fa-video mr-1"></i>
+                                      Video
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="/">
+                                      <i class="fas fa-link mr-1"></i>
+                                      Link
+                                    </a>
+                                  </li>
+                                  <li>
+                                    <a class="dropdown-item" href="/">
+                                      <i class="fas fa-question mr-1"></i>
+                                      Question & Answers
+                                    </a>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                        <ul class="nav nav-pills width-full">
+                          <li>
+                            <a href="dashboard.html">Dashboard</a>
+                          </li>
+                          <li>
+                            <a href="feeds.html">Feeds</a>
+                          </li>
+                          <li>
+                            <a href="events.html">Events</a>
+                          </li>
+                          <li>
+                            <a href="activities.html">Activities</a>
+                          </li>
+                          <li class="dropdown">
+                            <a
+                              class="dropdown-toggle"
+                              href="javascript:void(0)"
+                            >
+                              My Learning
+                            </a>
+
+                            <ul class="dropdown-menu list-dropdown">
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Great Sales Tips From Emma
+                                      </div>
+                                      <div class="course-list--progress">
+                                        <div class="progress progress-xs">
+                                          <div
+                                            class="progress-bar progress-bar-primary"
+                                            role="progressbar"
+                                            aria-valuenow="60"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            style="width: 60%"
+                                          >
+                                            <span class="sr-only"
+                                              >60% Complete</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                      </div>
+                                      <span class="course-list--start"
+                                        >Start learning</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit Lorem ipsum, dolor sit
+                                        amet consectetur adipisicing elit
+                                      </div>
+                                      <div class="course-list--progress">
+                                        <div class="progress progress-xs">
+                                          <div
+                                            class="progress-bar progress-bar-primary"
+                                            role="progressbar"
+                                            aria-valuenow="100"
+                                            aria-valuemin="0"
+                                            aria-valuemax="100"
+                                            style="width: 100%"
+                                          >
+                                            <span class="sr-only"
+                                              >100% Complete</span
+                                            >
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="p-3">
+                                <button
+                                  type="button"
+                                  onclick="window.location.href='./my-learning.html'"
+                                  class="ls-btn ls-btn-green btn-block rounded"
+                                >
+                                  Go to My Learning
+                                </button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a
+                              href="/"
+                              class="flex-column justify-content-center"
+                            >
+                              <div class="position-relative line-height-1 mb-1">
+                                <i class="icon-bell icons"></i>
+                                <span class="count">2</span>
+                              </div>
+                            </a>
+                            <ul
+                              class="dropdown-menu list-dropdown notification-list"
+                            >
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        You accepted the request of Shubham
+                                        Pandey
+                                      </div>
+                                      <span class="notification--time"
+                                        >1 day ago</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        You accepted the request of Shubham
+                                        Pandey
+                                      </div>
+                                      <span class="notification--time"
+                                        >1 day ago</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        You accepted the request of Shubham
+                                        Pandey
+                                      </div>
+                                      <span class="notification--time"
+                                        >1 day ago</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="p-3">
+                                <button
+                                  type="button"
+                                  onclick="window.location.href='./notifications.html'"
+                                  class="ls-btn ls-btn-green btn-block rounded"
+                                >
+                                  See All Notifications
+                                </button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a
+                              href="/"
+                              class="flex-column justify-content-center"
+                            >
+                              <div class="position-relative line-height-1 mb-1">
+                                <i class="icon-pin icons"></i>
+                                <span class="count">1</span>
+                              </div>
+                            </a>
+
+                            <ul class="dropdown-menu list-dropdown">
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Great Sales Tips From Emma
+                                      </div>
+                                      <span class="course-list--start"
+                                        >Start learning</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Lorem ipsum dolor sit, amet consectetur
+                                        adipisicing
+                                      </div>
+                                      <span class="course-list--start"
+                                        >Start learning</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit Lorem ipsum, dolor sit
+                                        amet consectetur adipisicing elit
+                                      </div>
+                                      <span class="course-list--start"
+                                        >Start learning</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="p-3">
+                                <button
+                                  type="button"
+                                  onclick="window.location.href='./my-pins.html'"
+                                  class="ls-btn ls-btn-green btn-block rounded"
+                                >
+                                  Go to My Pinned Courses
+                                </button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a
+                              href="/"
+                              class="flex-column justify-content-center"
+                            >
+                              <div class="position-relative line-height-1 mb-1">
+                                <i class="icon icon-envelope"></i>
+                                <span class="count">1</span>
+                              </div>
+                            </a>
+                            <ul
+                              class="dropdown-menu list-dropdown notification-list"
+                            >
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        Shubham Pandey
+                                      </div>
+                                      <span class="notification--time"
+                                        >Hi, How are you?</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        You accepted the request of Shubham
+                                        Pandey
+                                      </div>
+                                      <span class="notification--time"
+                                        >1 day ago</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)">
+                                  <div class="course-list">
+                                    <div class="course-list--img">
+                                      <img src="images/simulation.jpg" alt="" />
+                                    </div>
+                                    <div class="course-list--info">
+                                      <div class="course-list--title">
+                                        You accepted the request of Shubham
+                                        Pandey
+                                      </div>
+                                      <span class="notification--time"
+                                        >1 day ago</span
+                                      >
+                                    </div>
+                                  </div>
+                                </a>
+                              </li>
+                              <li class="p-3">
+                                <button
+                                  type="button"
+                                  onclick="window.location.href='./inbox.html'"
+                                  class="ls-btn ls-btn-green btn-block rounded"
+                                >
+                                  See All Messages
+                                </button>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="dropdown">
+                            <a href="/" class="dropdown-toggle">
+                              <img src="./images/simulation.jpg" alt="user" />
+                              <p class="mr-2">Points <span>2.5k</span></p>
+                            </a>
+
+                            <ul class="dropdown-menu" style="min-width: 350px">
+                              <li>
+                                <a
+                                  href="javascript:void(0)"
+                                  class="d-flex align-items-center py-3 no-hover"
+                                >
+                                  <img src="./images/frame.jpg" />
+                                  <div
+                                    class="d-flex align-items-center pl-2 flex-grow-1"
+                                  >
+                                    <p class="flex-grow-1">
+                                      Shubham Pandey
+                                      <span>sp255922@gmail.com</span>
+                                    </p>
+                                    <button type="button" class="btn btn-blue">
+                                      Upgrade
+                                    </button>
+                                  </div>
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="my-profile.html"
+                                  class="d-flex align-items-center"
+                                >
+                                  <i class="icons icon-user text-4 mr-2"></i> My
+                                  Profile
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="javascript:void(0)"
+                                  class="d-flex align-items-center"
+                                >
+                                  <i
+                                    class="icons icon-settings text-4 mr-2"
+                                  ></i>
+                                  Account Settings
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="javascript:void(0)"
+                                  class="d-flex align-items-center"
+                                >
+                                  <i
+                                    class="icons icon-book-open text-4 mr-2"
+                                  ></i>
+                                  Purchase History
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="javascript:void(0)"
+                                  class="d-flex align-items-center"
+                                >
+                                  <i
+                                    class="icons icon-exclamation text-4 mr-2"
+                                  ></i>
+                                  Help
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  href="javascript:void(0)"
+                                  class="d-flex align-items-center"
+                                >
+                                  <i class="icons icon-logout text-4 mr-2"></i>
+                                  Logout
+                                </a>
+                              </li>
+                              <li class="p-3">
+                                <button
+                                  type="button"
+                                  onclick="window.location.href='#'"
+                                  class="ls-btn ls-btn-orange btn-block"
+                                >
+                                  Learnsure for Business
+                                </button>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="dropdown">
+                            <a href="/" class="dropdown-toggle">
+                              <img
+                                style="
+                                  width: 30px;
+                                  height: auto;
+                                  border-radius: 0;
+                                "
+                                src="./images/en.jpg"
+                                alt="language"
+                              />EN
+                            </a>
+
+                            <ul class="dropdown-menu" style="min-width: 1px">
+                              <li>
+                                <a href="javascript:void(0)"
+                                  ><img
+                                    class="mr-2"
+                                    style="
+                                      width: 30px;
+                                      height: auto;
+                                      border-radius: 0;
+                                    "
+                                    src="./images/french.png"
+                                    alt="language"
+                                  />French</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  ><img
+                                    class="mr-2"
+                                    style="
+                                      width: 30px;
+                                      height: auto;
+                                      border-radius: 0;
+                                    "
+                                    src="./images/en.jpg"
+                                    alt="language"
+                                  />English</a
+                                >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                    <button
+                      class="btn header-btn-collapse-nav"
+                      data-toggle="collapse"
+                      data-target=".header-nav-main nav"
+                    >
+                      <i class="fa fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="header-column justify-content-end flex-grow-1">
-          <div class="header-row">
-            <div
-            class="header-nav flex-grow-1 header-nav-links header-nav-light-text header-nav-dropdowns-dark"
-            >
-            <div
-            class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1 appear-animation"
-            data-appear-animation="fadeIn"
-            data-plugin-options="{'accY': 100}"
-            >
-            <nav class="collapse">
-              <ul class="nav nav-pills">
-                <li class="dropdown">
-                  <a
-                  class="dropdown-toggle"
-                  href="javascript:void(0)"
-                  >
-                  Categories
-                </a>
-
-                <ul class="dropdown-menu">
-                  <li> <a class="dropdown-item" href="/">Dashboard</a> </li>
-                  <li> <a class="dropdown-item" href="/">Feeds</a> </li>
-
-                  <li> <a class="dropdown-item" href="/">Event</a> </li>
-
-                  <li> <a class="dropdown-item" href="/">Activities</a> </li>
-                  <li class="dropdown-submenu"> <a class="dropdown-item" href="/">My Learning</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="/">My Learning 1</a></li>
-                      <li><a class="dropdown-item" href="/">My Learning 2</a></li>
-                      <li><a class="dropdown-item" href="/">My Learning 3</a></li>
-                      <li><a class="dropdown-item" href="/">My Learning 4</a></li>
-                      <li><a class="dropdown-item" href="/">My Learning 5</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav nav-pills">
-              <li>
-                <a href="dashboard.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="feeds.html">Feeds</a>
-              </li>
-              <li>
-                <a href="events.html">Events</a>
-              </li>
-              <li>
-                <a href="activities.html">Activities</a>
-              </li>
-              <li class="dropdown">
-                <a
-                class="dropdown-toggle current"
-                href="javascript:void(0)"
-                >
-                My Learning
-              </a>
-
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="javascript:void(0)">My Learning</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">My Learning</a>
-                </li>
-                <li>
-                  <a href="javascript:void(0)">My Learning</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="/">Learnsure for Business</a>
-            </li>
-            <li>
-              <a href="/" class="p-0">
-                <div class="position-relative line-height-1">
-                  <i class="icon-magnifier icons"></i>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/" class="p-0">
-                <div class="position-relative line-height-1">
-                  <i class="icon-bell icons"></i>
-                  <span class="count">2</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/" class="p-0">
-                <div class="position-relative line-height-1">
-                  <i class="icon-pin icons"></i>
-                  <span class="count">1</span>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="/" class="p-0">
-                <div class="position-relative line-height-1">
-                  <i class="icon icon-envelope"></i>
-                  <span class="count">1</span>
-                </div>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="/" class="dropdown-toggle">
-                <img src="./images/simulation.jpg" alt="user" />
-                <p class="mr-2">Points <span>2.5k</span></p>
-              </a>
-
-              <ul class="dropdown-menu" style="min-width: 350px">
-                <li>
-                  <a
-                  href="javascript:void(0)"
-                  class="d-flex align-items-center py-3 no-hover"
-                  >
-                  <img src="./images/frame.jpg" />
-                  <div
-                  class="d-flex align-items-center pl-2 flex-grow-1"
-                  >
-                  <p class="flex-grow-1">
-                    Shubham Pandey
-                    <span>sp255922@gmail.com</span>
-                  </p>
-                  <button type="button" class="btn btn-blue">
-                    Upgrade
-                  </button>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a
-              href="my-profile.html"
-              class="d-flex align-items-center"
-              >
-              <i class="icons icon-user text-4 mr-2"></i> My
-              Profile
-            </a>
-          </li>
-          <li>
-            <a
-            href="javascript:void(0)"
-            class="d-flex align-items-center"
-            >
-            <i
-            class="icons icon-settings text-4 mr-2"
-            ></i>
-            Account Settings
-          </a>
-        </li>
-        <li>
-          <a
-          href="javascript:void(0)"
-          class="d-flex align-items-center"
-          >
-          <i
-          class="icons icon-book-open text-4 mr-2"
-          ></i>
-          Purchase History
-        </a>
-      </li>
-      <li>
-        <a
-        href="javascript:void(0)"
-        class="d-flex align-items-center"
-        >
-        <i
-        class="icons icon-exclamation text-4 mr-2"
-        ></i>
-        Help
-      </a>
-    </li>
-    <li>
-      <a
-      href="javascript:void(0)"
-      class="d-flex align-items-center"
-      >
-      <i class="icons icon-logout text-4 mr-2"></i>
-      Logout
-    </a>
-  </li>
-  <li class="p-3">
-    <a
-    href="javascript:void(0)"
-    class="btn btn-orange btn-block d-flex align-items-center justify-content-center"
-    style="height: 45px"
-    >
-    Learnsure for Business
-  </a>
-</li>
-</ul>
-</li>
-</ul>
-</nav>
-</div>
-<button
-class="btn header-btn-collapse-nav"
-data-toggle="collapse"
-data-target=".header-nav-main nav"
->
-<i class="fa fa-bars"></i>
-</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
+      </header>
+      <div class="category-bar" id="category-bar">
+        <div class="container">
+          <div class="global-search">
+            <i class="icon-magnifier icons"></i>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type to search..."
+            />
+          </div>
+          <div class="d-flex align-items-center">
+            <button type="button" class="ls-btn ls-btn-orange rounded">
+              Learnsure for business
+            </button>
+          </div>
+        </div>
+      </div>
 
 <div role="main" class="main">
   <div class="container">
@@ -855,7 +1219,7 @@ data-target=".header-nav-main nav"
           </a>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
-          <p class="text-4 mb-0 text-light">&copy; 2020 Learnsure. All rights reserved.</p>
+          <p class="mb-0 text-light">&copy; 2020 Learnsure. All rights reserved.</p>
         </div>
       </div>
     </div>
