@@ -444,6 +444,16 @@
   color: #fff;
 }
 
+.ls-btn-blue {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.ls-btn-blue:hover {
+  background-color: #0469dd;
+  color: #fff;
+}
+
 .ls-btn-danger {
   background-color: #dc3545;
   color: #fff;
@@ -464,13 +474,12 @@
   color: #fff;
 }
 
-
 /*micro-learning*/
 .micro-learning {
   background-color: #fff;
   background-size: cover;
   position: relative;
-  margin-bottom: 35px;
+  /* margin-bottom: 35px; */
   background-position: center center;
   transform: translateY(0);
   transition: all ease-in-out 0.3s;
@@ -508,7 +517,7 @@
   left: 0;
   top: 0;
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .micro-learning.style-2 * {
@@ -518,7 +527,6 @@
 
 .micro-learning.style-2 .micro-learning--body h3,
 .micro-learning.style-2 .micro-learning--body p,
-.micro-learning.style-2 .micro-learning--footer ul li,
 .micro-learning.style-3 .micro-learning--body h3,
 .micro-learning.style-3 .micro-learning--body p {
   color: #fff;
@@ -594,13 +602,12 @@
 .micro-learning--body p {
   font-size: 13px;
   margin: 0;
-  line-height: normal;
+  line-height: 23px;
 }
 
-.micro-learning--footer {
+/* .micro-learning--footer {
   border-top: 1px solid #eee;
-    /* margin-top: 15px; */
-}
+} */
 .micro-learning--footer ul {
   display: flex;
   align-items: center;
@@ -616,10 +623,15 @@
   align-items: center;
   justify-content: center;
   padding: 8px 15px;
+  background: #f1f1f1;
+  color: #000;
 }
 
 .micro-learning--footer ul li + li {
-  border-left: 1px solid #eee;
+  /* border-left: 1px solid #eee; */
+  margin-left: 0;
+  background: #f04646;
+  color: #fff;
 }
 
 .micro-learning--footer ul li i {
@@ -627,7 +639,7 @@
 }
 
 .micro-learning--footer ul li i.fas.fa-heart {
-  color: var(--likeColor);
+  color: #fff;
 }
 
 /*colors*/
