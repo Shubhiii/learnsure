@@ -983,7 +983,7 @@ Theme Version:	8.0.0
 }
 
 .circular-bar.circular-bar-sm label {
-  font-size: 14px;
+  font-size: 13px;
   top: 36%;
 }
 
@@ -3055,7 +3055,7 @@ html.ie9
 
 .owl-carousel.nav-font-size-md .owl-nav button.owl-prev,
 .owl-carousel.nav-font-size-md .owl-nav button.owl-next {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .owl-carousel.nav-font-size-lg .owl-nav button.owl-prev,
@@ -4089,7 +4089,7 @@ hr.pattern.pattern-2:after,
 }
 
 .dropdown.dropdown-style-1 .dropdown-menu .dropdown-item {
-  font-size: 14px;
+  font-size: 13px;
   padding-right: 17.6px;
   padding-right: 1.1rem;
   padding-left: 17.6px;
@@ -6230,7 +6230,7 @@ label.error#captcha-error {
 .captcha-input {
   position: relative;
   top: 15px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .captcha-image {
@@ -6716,7 +6716,7 @@ h6.text-shadow {
 .sample-icon-list .sample-icon a [class*="fa-"],
 .sample-icon-list .sample-icon a .icons {
   width: 32px;
-  font-size: 14px;
+  font-size: 13px;
   display: inline-block;
   text-align: right;
   margin-right: 10px;
@@ -7410,7 +7410,7 @@ html.lightbox-opened.sticky-header-active #header .header-body {
 /* List */
 .list li {
   margin-bottom: 13px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .list.pull-left li {
@@ -8272,7 +8272,7 @@ html[xmlns] .clearfix {
 .sample-item h5 {
   padding: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .sample-item h5 .sample-item-info {
@@ -10444,7 +10444,7 @@ html .scroll-to-top {
   align-items: center;
   justify-content: center;
   line-height: 1;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 html .scroll-to-top.visible {
@@ -12144,7 +12144,7 @@ html.boxed .slider-container {
 
 .nav-tabs li .nav-link {
   border-radius: 5px 5px 0 0;
-  font-size: 14px;
+  font-size: 13px;
   /* transition: all 0.2s; */
   margin-right: 1px;
   border: none !important;
@@ -12233,7 +12233,7 @@ html.boxed .slider-container {
 
 .tabs.tabs-bottom .nav-tabs li .nav-link {
   border-radius: 0 0 5px 5px;
-  font-size: 14px;
+  font-size: 13px;
   margin-right: 1px;
 }
 
@@ -13242,7 +13242,7 @@ html.boxed .slider-container {
 }
 
 .thumb-info .thumb-info-action-icon i {
-  font-size: 14px;
+  font-size: 13px;
   right: 50%;
   position: absolute;
   top: 50%;
@@ -13374,7 +13374,7 @@ html.boxed .slider-container {
   bottom: auto;
   width: 35px;
   height: 35px;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 50%;
   margin-right: 5px;
   transition: all 0.1s ease;
@@ -13790,7 +13790,7 @@ html.boxed .slider-container {
 /* Responsive */
 @media (max-width: 991px) {
   .thumb-info .thumb-info-title {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .thumb-info .thumb-info-more {
