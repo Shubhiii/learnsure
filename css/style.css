@@ -1124,10 +1124,9 @@ a:focus {
   border-top: 1px solid #eeee;
 }
 
-
 /*=========================== menu stick =========================*/
-.category-bar {
-  position: static;
+.business-body .category-bar {
+  position: relative;
   top: 0;
 }
 
@@ -1140,30 +1139,40 @@ a:focus {
 }
 .course-thumbnail:hover .course-thumbnail--overlay {
   opacity: 1;
+  transition: 0.3s all ease-in-out;
   /* transform: translate3d(0, 0%, 0); */
 }
 .course-thumbnail--overlay {
   position: absolute;
   cursor: pointer;
-    top: 0;
-    background: rgba(0,20,54,0.8);
-    z-index: 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    color: #fff;
-    justify-content: center;
-    padding: 30px;
-    opacity: 0;
-  transition: 0.3s;
+  top: 0;
+  background: rgba(0, 20, 54, 0.8);
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+  justify-content: center;
+  padding: 15px;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
   /* transform: translate3d(0, 100%, 0); */
+}
+
+.course-thumbnail--overlay i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 18px;
 }
 
 .course-thumbnail--overlay h3 {
   color: #fff;
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 600;
 }
 
 .course-thumbnail--overlay p {

@@ -2613,11 +2613,11 @@ html.sticky-header-active .default-logo {
 }
 
 .background-color-transparent {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .box-shadow-none {
-  box-shadow: none;
+  box-shadow: none !important;
 }
 
 .course-desc-banner {
@@ -3958,6 +3958,8 @@ html.sticky-header-active .default-logo {
   display: flex;
   text-align: center;
   border: 1px solid #eee;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fff;
   padding: 0 10px;
   border-radius: 4px;
   height: 100px;
@@ -4137,6 +4139,10 @@ html.sticky-header-active .default-logo {
   height: calc(100vh - (101px + 55px + 55px));
 }
 
+.business-body.business-body-v2 .full-width .owl-item {
+  height: 350px;
+}
+
 .business-body .full-width .owl-item > div {
   height: 100%;
   display: flex;
@@ -4171,27 +4177,41 @@ html.sticky-header-active .default-logo {
 
 .business-body .full-width .owl-item > div p {
   margin: 0 0 25px;
-  line-height: 24px;
-  font-size: 14px;
+  line-height: normal;
+  font-size: 16px;
   /* color: #fff; */
   letter-spacing: normal;
   position: relative;
   z-index: 1;
 }
 
-.business-body .owl-dots {
-  margin: 0 !important;
+.business-body.business-body-v2 .full-width .owl-item > div h3 {
+  font-size: 1.8em;
+}
+
+.business-body.business-body-v2 .full-width .owl-item > div p {
+  font-size: 14px;
+}
+
+.business-body .owl-carousel .owl-dots {
+  margin: 0;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 30px;
 }
 
-/* .business-body .owl-theme .owl-dots .owl-dot span {
-  background-color: #fff;
-  opacity: 0.2;
+.business-body .owl-carousel:not(.full-width) .owl-dots {
+  left: calc(40% + 15px);
+  transform: none;
+  bottom: 22px;
 }
 
+.business-body .owl-carousel:not(.full-width) .owl-dot span {
+  width: 10px;
+  height: 10px;
+}
+/*
 .business-body .owl-theme .owl-dots .owl-dot.active span {
   background-color: #fff;
   opacity: 1;
@@ -4292,16 +4312,18 @@ html.sticky-header-active .default-logo {
 }
 
 .secondary-suit-card .head {
-  width: 50%;
+  width: 40%;
   overflow: hidden;
 }
 
 .secondary-suit-card .content {
   background-color: #fff;
-  border: 1px solid #eee;
-  border-left: none;
-  width: 50%;
+  /* border: 1px solid #eee;
+  border-left: none; */
+  width: 60%;
   padding: 15px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
   /* position: absolute;
   top: 0;
   width: 80%;
@@ -4379,4 +4401,28 @@ html.sticky-header-active .default-logo {
   font-size: 13px;
   margin: 0;
   line-height: normal;
+}
+
+.business-body-v2 .primary-box-header > ul > li > a.active {
+  color: var(--secondaryColor);
+}
+
+.free {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 1;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.business-body-v2 .invitation-box .event-box {
+  padding: 10px;
+}
+
+.business-body-v2 .invitation-box .hosted-by,
+.business-body-v2 .invitation-box .invitation-intrest {
+  padding: 10px;
 }
