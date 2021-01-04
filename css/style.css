@@ -478,6 +478,16 @@
   color: #fff;
 }
 
+.ls-btn-secondary {
+  background-color: var(--secondaryColor);
+  color: #fff;
+}
+
+.ls-btn-secondary:hover {
+  /* background-color: #df472d; */
+  color: #fff;
+}
+
 /*micro-learning*/
 
 .micro-learning {
