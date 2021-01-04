@@ -1123,3 +1123,78 @@ a:focus {
   margin-top: 0;
   border-top: 1px solid #eeee;
 }
+
+
+/*=========================== menu stick =========================*/
+.category-bar {
+  position: static;
+  top: 0;
+}
+
+.card-filters {
+  position: sticky;
+  top: 70px;
+  z-index: 99;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
+  transition: all ease 0.3s;
+}
+.course-thumbnail:hover .course-thumbnail--overlay {
+  opacity: 1;
+}
+.course-thumbnail--overlay {
+  position: absolute;
+  cursor: pointer;
+    top: 0;
+    background: rgba(0,20,54,0.8);
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    padding: 30px;
+    opacity: 0;
+  transition: 0.3s;
+}
+
+.course-thumbnail--overlay h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.course-thumbnail--overlay p {
+  color: #fff;
+}
+
+.course-thumbnail--overlay .host-info {
+  display: flex;
+  /* margin-top: 5px; */
+  align-items: center;
+  width: 100%;
+}
+
+.course-thumbnail--overlay .host-info img {
+  border-radius: 50%;
+  width: 40px;
+  /* border: 1px solid #eee; */
+  object-fit: cover;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.course-thumbnail--overlay .host-info .wrap h3 {
+  text-transform: none;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+}
+
+.course-thumbnail--overlay .host-info .wrap p {
+  font-size: 12px;
+  line-height: 1;
+  opacity: 0.5;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
