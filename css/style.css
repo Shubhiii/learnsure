@@ -1140,6 +1140,7 @@ a:focus {
 }
 .course-thumbnail:hover .course-thumbnail--overlay {
   opacity: 1;
+  /* transform: translate3d(0, 0%, 0); */
 }
 .course-thumbnail--overlay {
   position: absolute;
@@ -1156,6 +1157,7 @@ a:focus {
     padding: 30px;
     opacity: 0;
   transition: 0.3s;
+  /* transform: translate3d(0, 100%, 0); */
 }
 
 .course-thumbnail--overlay h3 {
