@@ -183,6 +183,11 @@ p {
   color: #f6d55c;
 }
 
+.star-rating .wrap {
+  display: flex;
+  align-self: center;
+}
+
 /* #header .header-nav-main.header-nav-main-text-size-2 nav > ul > li > a > i {
 	margin-left: 5px;
 } */
@@ -946,7 +951,7 @@ html.sticky-header-active .default-logo {
   z-index: 99;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.04);
   /* margin-top: -1px; */
-  padding: 6px 10px;
+  padding: 6px 0;
   transition: top ease 0.3s;
 }
 
@@ -3644,6 +3649,7 @@ html.sticky-header-active .default-logo {
   /* position: relative; */
   /* padding-bottom: 15px; */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -4002,4 +4008,59 @@ html.sticky-header-active .default-logo {
 .suites-card.suites-card-lg .suites-card--body {
   width: 60%;
   justify-content: flex-start;
+}
+
+@media (max-width: 767px) {
+  .category-bar .global-search {
+    margin-bottom: 5px;
+  }
+
+  .category-bar .ls-btn {
+    flex-grow: 1;
+  }
+  .category-bar .container {
+    display: block;
+  }
+  .primary-box + .primary-box {
+    margin-top: 30px;
+  }
+  .try-for-business {
+    flex-direction: column;
+  }
+  .try-for-business h3 {
+    flex-direction: column;
+    margin-bottom: 15px !important;
+  }
+
+  .tech-world {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .tech-world .wrap {
+    margin-bottom: 10px;
+  }
+
+  .try-for-business h3 img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .primary-box-header h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 359px) {
+  .suites-card {
+    flex-wrap: wrap;
+  }
+  .suites-card .suites-card--header {
+    width: 100% !important;
+    border-right: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .suites-card .suites-card--body {
+    width: 100% !important;
+  }
 }
