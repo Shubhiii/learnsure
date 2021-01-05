@@ -1338,3 +1338,13 @@ a, a:hover, a:focus {
   color: #fff;
   background-color: #001436;
 }
+
+.business-body .ls-btn-blue {
+  background-color: var(--primaryColor);
+  color: #fff;
+}
+
+.business-body .ls-btn-blue:hover {
+  background-color: #0469dd;
+  color: #fff;
+}
