@@ -985,7 +985,7 @@ html.sticky-header-active .default-logo {
 .category-bar.stick {
   top: 70px;
   transition: all ease 0.3s;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .category-bar .categories > a {

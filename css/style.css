@@ -1259,11 +1259,14 @@ a, a:hover, a:focus {
   min-height: 47px;
 }
 
-.business-body .course-thumbnail--header img {
-  transform: none;
+.business-body .course-thumbnail--overlay h3 {
+  font-size: 15px;
 }
 
-.business-body .course-thumbnail:hover .course-thumbnail--header img {
+.business-body .course-thumbnail--header img ,
+.business-body .course-thumbnail:hover .course-thumbnail--header img ,
+.secondary-suit-card img ,
+.secondary-suit-card:hover img {
   transform: none;
 }
 
