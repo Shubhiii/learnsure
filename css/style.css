@@ -1351,3 +1351,23 @@ a, a:hover, a:focus {
   background-color: #0469dd;
   color: #fff;
 }
+
+
+/*new*/
+.business-body .invitation-box .event-box h3 {
+  line-height: 19px;
+}
+
+.business-body .secondary-suit-card .head img {
+  width: 100%;
+  height: 290px;
+}
+
+.business-body .micro .course-thumbnail--header {
+  background-color: var(--secondaryColor);
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
