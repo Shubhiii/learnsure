@@ -10540,9 +10540,6 @@ html.ie11 .scroll-to-top {
 
 /* Section Featured */
 section.section {
-  background: #f7f7f7;
-  border-top: 5px solid #f1f1f1;
-  margin: 30px 0;
   padding: 50px 0;
 }
 
@@ -11558,34 +11555,34 @@ html.boxed .slider-container {
 .social-icons {
   margin: 0;
   padding: 0;
+  display: flex;
+  list-style: none;
   width: auto;
 }
 
 .social-icons li {
-  display: inline-block;
-  margin: -1px 1px 0 0;
   padding: 0;
-  border-radius: 100%;
-  overflow: visible;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .social-icons li a {
-  transition: all 0.2s ease;
-  border-radius: 100%;
-  display: block;
-  height: 28px;
-  line-height: 28px;
-  width: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #fff;
   text-align: center;
-  color: #333 !important;
+  color: #fff !important;
   text-decoration: none;
-  font-size: 12.8px;
-  font-size: 0.8rem;
+  font-size: 12px !important;
 }
 
 .social-icons li:hover a {
-  background: #151719;
-  color: #fff !important;
+  background: #fff;
+  color: #001436 !important;
 }
 
 .social-icons li:hover.social-icons-twitter a {
@@ -12803,7 +12800,7 @@ html.boxed .slider-container {
 }
 
 .testimonial.testimonial-style-3 blockquote p {
-  color: #777;
+  color: #000000;
 
   font-size: 1em;
   font-style: normal;
