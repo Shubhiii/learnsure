@@ -42,134 +42,68 @@
     <link rel="stylesheet" href="css/theme-elements.css" />
     <link rel="stylesheet" href="css/theme-blog.css" />
     <link rel="stylesheet" href="css/theme-shop.css" />
-    <!-- Demo CSS -->
-    <link rel="stylesheet" href="css/demos/demo-landing.css" />
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
   </head>
 
-  <body
-    class="loading-overlay-showing"
-    data-plugin-page-transition
-    data-loading-overlay
-    data-plugin-options="{'hideDelay': 100}"
-  >
-    <div class="loading-overlay">
-      <div class="bounce-loader">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-      </div>
-    </div>
-    <div class="body">
-      <header
-        id="header"
-        class="header-effect-shrink"
-        data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': true, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}"
-      >
-        <div class="header-body border-top-0">
+  <body>
+    <main class="body">
+      <header id="header" class="primary-header">
+        <div class="header-body border-0 box-shadow-none">
           <div class="header-container container">
             <div class="header-row">
+              <button
+                class="btn header-btn-collapse-nav"
+                data-toggle="collapse"
+                data-target=".header-nav-main nav"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+
               <div class="header-column">
                 <div class="header-row">
-                  <div
-                    class="header-logo appear-animation"
-                    data-appear-animation="fadeIn"
-                    data-plugin-options="{'accY': 100}"
-                  >
+                  <div class="header-logo pr-2">
                     <a href="/" class="goto-top">
                       <img
                         alt="learnsure"
-                        width="180"
-                        height="37"
+                        width="170"
+                        height="35"
                         data-sticky-top="0"
                         src="img/lazy.png"
                         data-plugin-lazyload
                         data-plugin-options="{'threshold': 500}"
-                        data-original="images/logo.svg"
+                        data-original="images/logo-white.svg"
                       />
                     </a>
                   </div>
                 </div>
               </div>
+
               <div class="header-column justify-content-end flex-grow-1">
                 <div class="header-row">
                   <div
                     class="header-nav flex-grow-1 header-nav-links header-nav-light-text header-nav-dropdowns-dark"
                   >
                     <div
-                      class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1 appear-animation"
-                      data-appear-animation="fadeIn"
-                      data-plugin-options="{'accY': 100}"
+                      class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1 appear-animation animated fadeIn appear-animation-visible"
                     >
                       <nav class="collapse">
                         <ul class="nav nav-pills">
-                          <li class="dropdown">
-                            <a
-                              class="dropdown-toggle"
-                              href="javascript:void(0)"
-                            >
-                              Categories
-                            </a>
-
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="/">
-                                  <i class="icon-briefcase icons mr-1"></i>
-                                  Suites
-                                </a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="/">
-                                  <i class="icon-screen-desktop icons mr-1"></i>
-                                  Courses
-                                </a>
-                              </li>
-                              <li class="dropdown-submenu">
-                                <a class="dropdown-item" href="/">
-                                  <i class="icon-organization mr-1 icons"></i>
-                                  Microlearning
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li>
-                                    <a class="dropdown-item" href="/">
-                                      <i class="fas fa-video mr-1"></i>
-                                      Video
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="/">
-                                      <i class="fas fa-link mr-1"></i>
-                                      Link
-                                    </a>
-                                  </li>
-                                  <li>
-                                    <a class="dropdown-item" href="/">
-                                      <i class="fas fa-question mr-1"></i>
-                                      Question & Answers
-                                    </a>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
+                          <li>
+                            <div class="company-info">
+                              <span>
+                                <img
+                                  src="https://www.bharti-axagi.co.in/90eb84aefe515d5aaa7162b9e931ea67.png"
+                                />
+                              </span>
+                              Bharti Axa General Insurance
+                            </div>
                           </li>
                         </ul>
+
                         <ul class="nav nav-pills width-full">
-                          <li>
-                            <a href="dashboard.html">Dashboard</a>
-                          </li>
-                          <li>
-                            <a href="feeds.html">Feeds</a>
-                          </li>
-                          <li>
-                            <a href="events.html">Events</a>
-                          </li>
-                          <li>
-                            <a href="activities.html">Activities</a>
-                          </li>
                           <li class="dropdown">
                             <a
                               class="dropdown-toggle"
@@ -263,10 +197,53 @@
                                 <button
                                   type="button"
                                   onclick="window.location.href='./my-learning.html'"
-                                  class="ls-btn ls-btn-green btn-block rounded"
+                                  class="ls-btn ls-btn-blue btn-block rounded"
                                 >
                                   Go to My Learning
                                 </button>
+                              </li>
+                            </ul>
+                          </li>
+
+                          <li class="dropdown">
+                            <a href="/" class="">
+                              <img
+                                src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png"
+                                alt="language"
+                              />
+                            </a>
+
+                            <ul
+                              class="dropdown-menu"
+                              style="min-width: 130px; right: -10px"
+                            >
+                              <li>
+                                <a href="javascript:void(0)"
+                                  ><img
+                                    class="mr-2"
+                                    style="
+                                      width: 30px;
+                                      height: auto;
+                                      border-radius: 0;
+                                    "
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png"
+                                    alt="language"
+                                  />French</a
+                                >
+                              </li>
+                              <li>
+                                <a href="javascript:void(0)"
+                                  ><img
+                                    class="mr-2"
+                                    style="
+                                      width: 30px;
+                                      height: auto;
+                                      border-radius: 0;
+                                    "
+                                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png"
+                                    alt="language"
+                                  />English</a
+                                >
                               </li>
                             </ul>
                           </li>
@@ -275,7 +252,7 @@
                               href="/"
                               class="flex-column justify-content-center"
                             >
-                              <div class="position-relative line-height-1 mb-1">
+                              <div class="position-relative">
                                 <i class="icon-bell icons"></i>
                                 <span class="count">2</span>
                               </div>
@@ -341,7 +318,7 @@
                                 <button
                                   type="button"
                                   onclick="window.location.href='./notifications.html'"
-                                  class="ls-btn ls-btn-green btn-block rounded"
+                                  class="ls-btn ls-btn-blue btn-block rounded"
                                 >
                                   See All Notifications
                                 </button>
@@ -353,7 +330,7 @@
                               href="/"
                               class="flex-column justify-content-center"
                             >
-                              <div class="position-relative line-height-1 mb-1">
+                              <div class="position-relative">
                                 <i class="icon-pin icons"></i>
                                 <span class="count">1</span>
                               </div>
@@ -418,7 +395,7 @@
                                 <button
                                   type="button"
                                   onclick="window.location.href='./my-pins.html'"
-                                  class="ls-btn ls-btn-green btn-block rounded"
+                                  class="ls-btn ls-btn-blue btn-block rounded"
                                 >
                                   Go to My Pinned Courses
                                 </button>
@@ -430,8 +407,8 @@
                               href="/"
                               class="flex-column justify-content-center"
                             >
-                              <div class="position-relative line-height-1 mb-1">
-                                <i class="icon icon-envelope"></i>
+                              <div class="position-relative">
+                                <i class="icon icon-speech"></i>
                                 <span class="count">1</span>
                               </div>
                             </a>
@@ -495,7 +472,7 @@
                                 <button
                                   type="button"
                                   onclick="window.location.href='./inbox.html'"
-                                  class="ls-btn ls-btn-green btn-block rounded"
+                                  class="ls-btn ls-btn-blue btn-block rounded"
                                 >
                                   See All Messages
                                 </button>
@@ -503,12 +480,16 @@
                             </ul>
                           </li>
                           <li class="dropdown">
-                            <a href="/" class="dropdown-toggle">
-                              <img src="./images/simulation.jpg" alt="user" />
-                              <p class="mr-2">Points <span>2.5k</span></p>
+                            <a href="/" class="">
+                              <img
+                                src="./images/simulation.jpg"
+                                style="border: 0"
+                                alt="user"
+                              />
+                              <!-- <p class="mr-2">Points <span>2.5k</span></p> -->
                             </a>
 
-                            <ul class="dropdown-menu" style="min-width: 350px">
+                            <ul class="dropdown-menu" style="right: 0">
                               <li>
                                 <a
                                   href="javascript:void(0)"
@@ -522,9 +503,6 @@
                                       Shubham Pandey
                                       <span>sp255922@gmail.com</span>
                                     </p>
-                                    <button type="button" class="btn btn-blue">
-                                      Upgrade
-                                    </button>
                                   </div>
                                 </a>
                               </li>
@@ -537,6 +515,19 @@
                                   Profile
                                 </a>
                               </li>
+
+                              <li>
+                                <a
+                                  href="my-profile.html"
+                                  class="d-flex align-items-center"
+                                >
+                                  <i
+                                    class="icons icon-magic-wand text-4 mr-2"
+                                  ></i>
+                                  My Points
+                                </a>
+                              </li>
+
                               <li>
                                 <a
                                   href="javascript:void(0)"
@@ -579,72 +570,11 @@
                                   Logout
                                 </a>
                               </li>
-                              <li class="p-3">
-                                <button
-                                  type="button"
-                                  onclick="window.location.href='#'"
-                                  class="ls-btn ls-btn-orange btn-block"
-                                >
-                                  Learnsure for Business
-                                </button>
-                              </li>
-                            </ul>
-                          </li>
-
-                          <li class="dropdown">
-                            <a href="/" class="dropdown-toggle">
-                              <img
-                                style="
-                                  width: 30px;
-                                  height: auto;
-                                  border-radius: 0;
-                                "
-                                src="./images/en.jpg"
-                                alt="language"
-                              />EN
-                            </a>
-
-                            <ul class="dropdown-menu" style="min-width: 1px">
-                              <li>
-                                <a href="javascript:void(0)"
-                                  ><img
-                                    class="mr-2"
-                                    style="
-                                      width: 30px;
-                                      height: auto;
-                                      border-radius: 0;
-                                    "
-                                    src="./images/french.png"
-                                    alt="language"
-                                  />French</a
-                                >
-                              </li>
-                              <li>
-                                <a href="javascript:void(0)"
-                                  ><img
-                                    class="mr-2"
-                                    style="
-                                      width: 30px;
-                                      height: auto;
-                                      border-radius: 0;
-                                    "
-                                    src="./images/en.jpg"
-                                    alt="language"
-                                  />English</a
-                                >
-                              </li>
                             </ul>
                           </li>
                         </ul>
                       </nav>
                     </div>
-                    <button
-                      class="btn header-btn-collapse-nav"
-                      data-toggle="collapse"
-                      data-target=".header-nav-main nav"
-                    >
-                      <i class="fa fa-bars"></i>
-                    </button>
                   </div>
                 </div>
               </div>
@@ -652,899 +582,975 @@
           </div>
         </div>
       </header>
-      <div class="category-bar" id="category-bar">
-        <div class="container">
-          <div class="global-search">
-            <i class="icon-magnifier icons"></i>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Type to search..."
-            />
-          </div>
-          <div class="d-flex align-items-center">
-            <button type="button" class="ls-btn ls-btn-orange rounded">
-              Learnsure for business
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <div role="main" class="main">
-        <div
-          class="course-desc-banner"
-          style="background-image: url(images/banner-bg.jpg)"
-        >
-          <div class="container align-self-stretch">
-            <div class="row pb-5">
-              <div class="col-md-9 d-flex flex-column">
-                <ul
-                  class="appear-animation"
-                  data-appear-animation="fadeInUpShorter"
-                  data-appear-animation-delay="400"
-                  data-appear-animation-duration="750"
-                >
-                  <li>
-                    <a href="javascript:void(0)">Development</a>
-                  </li>
-                  <li>
-                    <a href="javascript:void(0)">Web Development</a>
-                  </li>
-                  <li>Going Digital</li>
-                </ul>
-                <div class="wrapper">
-                  <h1
-                    class="font-weight-bold text-light text-7 line-height-3 mb-2 appear-animation"
-                    data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="900"
-                    data-appear-animation-duration="750"
-                  >
-                    Going Digital
-                  </h1>
-                  <p
-                    class="custom-font-size-1 text-light appear-animation"
-                    data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="1200"
-                    data-appear-animation-duration="750"
-                  >
-                    Going Digital is your need of the hour and also the future.
-                    With technology and AI forcing its way, selling insurance
-                    now has new rules. Learn about them in this course.
-                  </p>
-
-                  <div
-                    class="review-rating appear-animation"
-                    data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="1500"
-                    data-appear-animation-duration="750"
-                  >
-                    <div class="star-rating">
-                      <p>4.7</p>
-                      <div class="wrap">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-                      </div>
-                      <!-- <p>4.7</p> -->
-                      <span>(103,311 Ratings) - 321,618 students</span>
-                    </div>
-                  </div>
-
-                  <div
-                    class="info appear-animation"
-                    data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="1800"
-                    data-appear-animation-duration="750"
-                  >
-                    <p><i class="far fa-eye"></i> 200 Views</p>
-                    <p>
-                      <i class="far fa-calendar-alt"></i> Last updated on
-                      12/2020
-                    </p>
-                    <p><i class="icons icon-globe"></i> English</p>
-                    <p><i class="far fa-closed-captioning"></i>English, 2+</p>
-                  </div>
-
-                  <div
-                    class="d-md-flex align-items-center mt-4 appear-animation"
-                    data-appear-animation="fadeInUpShorter"
-                    data-appear-animation-delay="2100"
-                    data-appear-animation-duration="750"
-                  >
-                    <a
-                      href="course-content.html"
-                      class="ls-btn rounded ls-btn-green px-5 mt-3 mt-md-0"
-                    >
-                      START COURSE
-                    </a>
-                    <a
-                      class="video-open lightbox d-flex ml-md-3 align-items-center text-color-light"
-                      href="#popup-content-1"
-                      data-appear-animation="fadeInUpShorter"
-                      data-appear-animation-delay="1100"
-                      data-appear-animation-duration="750"
-                      data-plugin-options="{'type':'inline'}"
-                    >
-                      <div class="video-open-icon"></div>
-                      Preview This Course
-                    </a>
-                    <div
-                      id="popup-content-1"
-                      class="dialog dialog-lg zoom-anim-dialog rounded p-3 mfp-hide mfp-close-out"
-                    >
-                      <iframe
-                        width="100%"
-                        height="500px"
-                        src="https://www.youtube.com/embed/LO_IELZ8NHg"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-
-                      <!-- <div class="embed-responsive embed-responsive-4by3">
-                        <video
-                          width="100%"
-                          height="100%"
-                          autoplay
-                          muted
-                          loop
-                          controls
-                        >
-                          <source src="video/video.mp4" type="video/mp4" />
-                        </video>
-                      </div> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- <div class="col-md-3 align-self-center text-center">
-                <div
-                  class="created-by appear-animation"
-                  data-appear-animation="expandIn"
-                  data-appear-animation-delay="2100"
-                  data-appear-animation-duration="750"
-                >
-                  <img src="images/frame.jpg" />
-                  <h3>Shirley Setia</h3>
-                  <p>Sr. Web Designer <span>(Creator)</span></p>
-                  <a href="javscript:void(0)">Follow</a>
-                </div>
-              </div> -->
-            </div>
-
-            <div class="course-includes position-absolute">
-              <h4>This course includes:</h4>
-
-              <ul>
-                <li><i class="fas fa-video"></i>54.5 hours on-demand video</li>
-                <li><i class="fas fa-file-alt"></i>80 articles</li>
+      <div
+        class="course-desc-banner"
+        style="background-image: url(images/banner-bg.jpg)"
+      >
+        <div class="container align-self-stretch">
+          <div class="row pb-5">
+            <div class="col-md-9 d-flex flex-column">
+              <ul
+                class="appear-animation"
+                data-appear-animation="fadeInUpShorter"
+                data-appear-animation-delay="400"
+                data-appear-animation-duration="750"
+              >
                 <li>
-                  <i class="fas fa-download"></i>21 downloadable resources
-                </li>
-                <li><i class="fas fa-code"></i>8 coding exercises</li>
-                <li>
-                  <i class="fas fa-mobile-alt"></i>Access on mobile and TV
+                  <a href="javascript:void(0)">Development</a>
                 </li>
                 <li>
-                  <i class="fas fa-certificate"></i>Certificate of completion
+                  <a href="javascript:void(0)">Web Development</a>
                 </li>
+                <li>Going Digital</li>
               </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="container pt-5">
-          <div class="row py-5">
-            <div class="col-lg-9">
-              <div
-                class="primary-box background-color-transparent box-shadow-none p-0"
-              >
-                <div class="primary-box-header">
-                  <h4 class="d-flex align-items-end m-0">What You'll learn</h4>
-                </div>
-
-                <ul class="primary-list horizontal">
-                  <li>Be able to build ANY website you want.</li>
-                  <li>
-                    Craft a portfolio of websites to apply for junior developer
-                    jobs.
-                  </li>
-                  <li>
-                    Build fully-fledged websites and web apps for your startup
-                    or business.
-                  </li>
-                  <li>Work as a freelance web developer.</li>
-                  <li>Master backend development with Node</li>
-                  <li>Master frontend development with React</li>
-                  <li>
-                    Learn the latest frameworks and technologies, including
-                    Javascript ES6, Bootstrap 4, MongoDB.
-                  </li>
-                  <li>Learn professional developer best practices.</li>
-                </ul>
-              </div>
-
-              <div
-                class="try-for-business my-4 d-flex align-items-center justify-content-between p-3"
-                style="background-image: url('images/bg2.jpg')"
-              >
-                <h3 class="m-0 d-flex align-items-center">
-                  Curated for the
-                  <img src="images/logo-white.svg" class="mx-2" width="120" />
-                  for Business collection
-                </h3>
-                <a class="m-0" href="javscript:void(0)"
-                  >Try Learnsure for Business</a
+              <div class="wrapper">
+                <h1
+                  class="font-weight-bold text-light text-7 line-height-3 mb-2 appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="900"
+                  data-appear-animation-duration="750"
                 >
-              </div>
-
-              <div
-                class="primary-box background-color-transparent box-shadow-none p-0"
-              >
-                <div class="primary-box-header">
-                  <h4 class="d-flex align-items-end m-0">Course Content</h4>
-                  <p class="primary-paragraph m-0">
-                    <!-- 35 sections • 440 lectures • 55h 5m total length -->
-                  </p>
-                </div>
-
-                <div class="toggle primary-toggle" data-plugin-toggle>
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Going Digital</span>
-                      <em>3 lectures • 8min</em>
-                    </a>
-                    <div class="toggle-content">
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <a href="javascript:void(0)"> Prelude </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)"> Preview </a>
-                          <em>1.5min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <a href="javascript:void(0)"> The Transformation </a>
-                        </li>
-                        <li>
-                          <a href="javascript:void(0)"> Preview </a>
-                          <em>1.5min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Product Fluency</span>
-                        </li>
-                        <li>
-                          <em>5min</em>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Leveraging Social Media</span>
-                      <em>3 lectures • 21min</em>
-                    </a>
-                    <div class="toggle-content">
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Build a BRAND YOU</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Positive static and active branding</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Social selling</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Invest in a Digital Strategy</span>
-                      <em>4 lectures • 21min</em>
-                    </a>
-                    <div class="toggle-content">
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>The old game is over</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Where the fun and the money is…</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>The INFLUENCER mode</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>The SEO booster</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Prospecting and Networking</span>
-                      <em>8 lectures • 56min</em>
-                    </a>
-                    <div class="toggle-content">
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Relational marketing</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>The Fast Five</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Social media for client cultivation</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Networking Orbit</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span
-                            >InPractice: Digital Profile of Amit Palliwal</span
-                          >
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Insurance Online Aggregators</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Competing with clients</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Cool tools for social media</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Social Media Channels</span>
-                      <em>4 lectures • 32min</em>
-                    </a>
-                    <div class="toggle-content">
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>LinkedIn</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Facebook</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>YouTube</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-
-                      <ul>
-                        <li>
-                          <i class="icons icon-control-play"></i>
-                          <span>Instagram</span>
-                        </li>
-                        <li>
-                          <em>7min</em>
-                        </li>
-                      </ul>
-                    </div>
-                  </section>
-
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Mobile Experience for Insurance</span>
-                      <em>7min</em>
-                    </a>
-                  </section>
-
-                  <section class="toggle">
-                    <a class="toggle-title">
-                      <span>Sales Shots</span>
-                      <em>Doc</em>
-                    </a>
-                  </section>
-                </div>
-              </div>
-
-              <div
-                class="primary-box background-color-transparent box-shadow-none p-0"
-              >
-                <div class="primary-box-header">
-                  <h4 class="d-flex align-items-end m-0">Description</h4>
-                </div>
-
-                <p class="primary-paragraph">
+                  Going Digital
+                </h1>
+                <p
+                  class="custom-font-size-1 text-light appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="1200"
+                  data-appear-animation-duration="750"
+                >
                   Going Digital is your need of the hour and also the future.
                   With technology and AI forcing its way, selling insurance now
                   has new rules. Learn about them in this course.
                 </p>
-              </div>
 
-              <div
-                class="primary-box background-color-transparent box-shadow-none p-0"
-              >
-                <div class="primary-box-header">
-                  <h4 class="d-flex align-items-end m-0">Suggested Courses</h4>
+                <div
+                  class="review-rating appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="1500"
+                  data-appear-animation-duration="750"
+                >
+                  <div class="star-rating">
+                    <p>4.7</p>
+                    <div class="wrap">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <!-- <p>4.7</p> -->
+                    <span>(103,311 Ratings) - 321,618 students</span>
+                  </div>
                 </div>
 
                 <div
-                  class="owl-carousel owl-theme show-nav-title"
-                  data-plugin-options="{'items': 3, 'margin': 15, 'loop': true, 'autoplay': true, 'nav': true, 'dots': false}"
+                  class="info appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="1800"
+                  data-appear-animation-duration="750"
                 >
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/1754098_e0df_3.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>The Data Science Course</h3>
-                      <p>
-                        Complete Data Science Training: Mathematics, Statistics,
-                        Python, Advanced Statistics in Python & Machine
-                        Learning.
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1.5k</li>
-                        <li>
-                          <div class="star-rating d-flex">
-                            <div class="wrap">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+                  <p class="pl-0"><i class="far fa-eye"></i> 200 Views</p>
+                  <p>
+                    <i class="far fa-calendar-alt"></i> Last updated on 12/2020
+                  </p>
+                  <p><i class="icons icon-globe"></i> English</p>
+                  <p class="pr-0">
+                    <i class="far fa-closed-captioning"></i>English, 2+
+                  </p>
+                </div>
 
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/903744_8eb2.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>Python for Data Science</h3>
-                      <p>
-                        Learn how to use NumPy, Pandas, Seaborn , Matplotlib ,
-                        Plotly , Scikit-Learn , Machine Learning, Tensorflow ,
-                        and more!
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1.5k</li>
-                        <li>
-                          <div class="star-rating d-flex">
-                            <div class="wrap">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/258316_55e9_8.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>Complete C#</h3>
-                      <p>
-                        Learn Unity in C# & Code Your First Seven 2D Video Games
-                        for Web, Mac & PC. The Tutorials Cover Tilemap (35
-                        hours)
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1.5k</li>
-                        <li>
-                          <div class="star-rating d-flex">
-                            <div class="wrap">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/1362070_b9a1_2.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>React - The Complete Guide</h3>
-                      <p>
-                        Dive in and learn React.js from scratch! Learn Reactjs,
-                        Hooks, Redux, React Routing, Animations, Next.js and way
-                        more!
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1.5k</li>
-                        <li>
-                          <div class="star-rating d-flex">
-                            <div class="wrap">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/756150_c033_2.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>AngularJs</h3>
-                      <p>
-                        Dive in and Learn Angular 10 (formerly "Angular 2") and
-                        build awesome, reactive web apps with the successor of
-                        Angular.js
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1.5k</li>
-                        <li>
-                          <div class="star-rating d-flex">
-                            <div class="wrap">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                <div
+                  class="d-md-flex align-items-center mt-4 appear-animation"
+                  data-appear-animation="fadeInUpShorter"
+                  data-appear-animation-delay="2100"
+                  data-appear-animation-duration="750"
+                >
+                  <a
+                    href="course-content.html"
+                    class="ls-btn rounded ls-btn-green px-5 mt-3 mt-md-0"
+                  >
+                    START COURSE
+                  </a>
+                  <a
+                    class="video-open lightbox d-flex ml-md-3 align-items-center text-color-light"
+                    href="#popup-content-1"
+                    data-appear-animation="fadeInUpShorter"
+                    data-appear-animation-delay="1100"
+                    data-appear-animation-duration="750"
+                    data-plugin-options="{'type':'inline'}"
+                  >
+                    <div class="video-open-icon"></div>
+                    Preview This Course
+                  </a>
+                  <div
+                    id="popup-content-1"
+                    class="dialog dialog-lg zoom-anim-dialog rounded p-3 mfp-hide mfp-close-out"
+                  >
+                    <iframe
+                      width="100%"
+                      height="500px"
+                      src="https://www.youtube.com/embed/LO_IELZ8NHg"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3">
-              <div
-                class="people-to-meet primary-box background-color-transparent box-shadow-none p-0"
-              >
-                <div class="primary-box-header">
-                  <h3 class="mb-0">About Instructor</h3>
-                </div>
+          </div>
 
-                <div class="primary-user-box">
-                  <div
-                    class="primary-user-box--header"
-                    style="
-                      background-image: url(images/course-img/1754098_e0df_3.jpg);
-                    "
-                  ></div>
-                  <div class="primary-user-box--body">
-                    <div class="primary-user--img">
-                      <img src="./images/frame.jpg" alt="" />
-                    </div>
-                    <div class="primary-user--info">
+          <div class="course-includes position-absolute">
+            <h4>This course includes:</h4>
+
+            <ul>
+              <li><i class="fas fa-video"></i>54.5 hours on-demand video</li>
+              <li><i class="fas fa-file-alt"></i>80 articles</li>
+              <li><i class="fas fa-download"></i>21 downloadable resources</li>
+              <li><i class="fas fa-code"></i>8 coding exercises</li>
+              <li><i class="fas fa-mobile-alt"></i>Access on mobile and TV</li>
+              <li>
+                <i class="fas fa-certificate"></i>Certificate of completion
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-5">
+        <div class="row py-5">
+          <div class="col-lg-9">
+            <div
+              class="primary-box border-0 background-color-transparent box-shadow-none p-0"
+            >
+              <div class="primary-box-header">
+                <h4 class="d-flex align-items-end m-0">What You'll learn</h4>
+              </div>
+
+              <ul class="primary-list horizontal">
+                <li>Be able to build ANY website you want.</li>
+                <li>
+                  Craft a portfolio of websites to apply for junior developer
+                  jobs.
+                </li>
+                <li>
+                  Build fully-fledged websites and web apps for your startup or
+                  business.
+                </li>
+                <li>Work as a freelance web developer.</li>
+                <li>Master backend development with Node</li>
+                <li>Master frontend development with React</li>
+                <li>
+                  Learn the latest frameworks and technologies, including
+                  Javascript ES6, Bootstrap 4, MongoDB.
+                </li>
+                <li>Learn professional developer best practices.</li>
+              </ul>
+            </div>
+
+            <div
+              class="primary-box border-0 background-color-transparent box-shadow-none p-0"
+            >
+              <div class="primary-box-header">
+                <h4 class="d-flex align-items-end m-0">Course Content</h4>
+                <p class="primary-paragraph m-0">
+                  <!-- 35 sections • 440 lectures • 55h 5m total length -->
+                </p>
+              </div>
+
+              <div class="toggle primary-toggle" data-plugin-toggle>
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Going Digital</span>
+                    <em>3 lectures • 8min</em>
+                  </a>
+                  <div class="toggle-content">
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <a href="javascript:void(0)"> Prelude </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"> Preview </a>
+                        <em>1.5min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <a href="javascript:void(0)"> The Transformation </a>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0)"> Preview </a>
+                        <em>1.5min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Product Fluency</span>
+                      </li>
+                      <li>
+                        <em>5min</em>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Leveraging Social Media</span>
+                    <em>3 lectures • 21min</em>
+                  </a>
+                  <div class="toggle-content">
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Build a BRAND YOU</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Positive static and active branding</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Social selling</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Invest in a Digital Strategy</span>
+                    <em>4 lectures • 21min</em>
+                  </a>
+                  <div class="toggle-content">
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>The old game is over</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Where the fun and the money is…</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>The INFLUENCER mode</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>The SEO booster</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Prospecting and Networking</span>
+                    <em>8 lectures • 56min</em>
+                  </a>
+                  <div class="toggle-content">
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Relational marketing</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>The Fast Five</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Social media for client cultivation</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Networking Orbit</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span
+                          >InPractice: Digital Profile of Amit Palliwal</span
+                        >
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Insurance Online Aggregators</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Competing with clients</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Cool tools for social media</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Social Media Channels</span>
+                    <em>4 lectures • 32min</em>
+                  </a>
+                  <div class="toggle-content">
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>LinkedIn</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Facebook</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>YouTube</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+
+                    <ul>
+                      <li>
+                        <i class="icons icon-control-play"></i>
+                        <span>Instagram</span>
+                      </li>
+                      <li>
+                        <em>7min</em>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Mobile Experience for Insurance</span>
+                    <em>7min</em>
+                  </a>
+                </section>
+
+                <section class="toggle">
+                  <a class="toggle-title">
+                    <span>Sales Shots</span>
+                    <em>Doc</em>
+                  </a>
+                </section>
+              </div>
+            </div>
+
+            <div
+              class="primary-box border-0 background-color-transparent box-shadow-none p-0"
+            >
+              <div class="primary-box-header">
+                <h4 class="d-flex align-items-end m-0">Description</h4>
+              </div>
+
+              <p class="primary-paragraph">
+                Going Digital is your need of the hour and also the future. With
+                technology and AI forcing its way, selling insurance now has new
+                rules. Learn about them in this course.
+              </p>
+            </div>
+
+            <div
+              class="primary-box border-0 background-color-transparent box-shadow-none p-0"
+            >
+              <div class="primary-box-header">
+                <h4 class="d-flex align-items-end m-0">Suggested Courses</h4>
+              </div>
+
+              <div
+                class="owl-carousel m-0 owl-theme show-nav-title"
+                data-plugin-options="{'autoplay': false, 'nav': true, 'dots': false}"
+              >
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>Principles of Insurance</h3>
+                    <p>
+                      Learn Core fundamentals of insurance in this course as
+                      getting the basics right is the most important part of
+                      your journey.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
                       <div class="wrap">
-                        <h3>Shirley Setia</h3>
-                        <p class="mb-1">Sr. Web Designer (Creator)</p>
-                      </div>
-                      <div class="btns d-flex">
-                        <!-- <a href="javascript:void(0)" class="outline">
-                                  <i class="icon-bubbles icons"></i> Message
-                              </a> -->
-                        <a href="javascript:void(0)">
-                          <i class="icon-user-following icons"></i> Follow
-                        </a>
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="primary-user-box--footer">
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/Essential Learning/Essential learning-Principles of Insurance.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>Principles of Insurance</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>Code of Ethics</h3>
+                    <p>
+                      Compliance and adherence to regulatory standards for
+                      insurance is tedious, But Learnsure brings about the
+                      corrective rules that need to be followed to maintain
+                      legal and operational activities.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/Essential Learning/Essential Learning-2-Code of Ethics-wm.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>Code of Ethics</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>Managing your Finances</h3>
+                    <p>
+                      The basics of every common man begins with finances and
+                      with this course, you can get them right.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/Essential Learning/Essential Learning-Managing your Finances.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>Managing your Finances</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>The Insurance Policy Lifecycle</h3>
+                    <p>
+                      In this short course, learners will see how each major
+                      operational area helps shape the insurance product and
+                      customers’ perception of its value. They will also
+                      discover the key stages in the life cycle of an insurance
+                      policy—from initial planning and product development,
+                      through policy application and underwriting, and finally
+                      through policyowner service and claim administration.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/Essential Learning/Essential Learning-The Insurance Policy Lifecycle.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>The Insurance Policy Lifecycle</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="people-to-meet border-0 primary-box background-color-transparent box-shadow-none p-0"
+            >
+              <div class="primary-box-header">
+                <h3 class="mb-0">About Instructor</h3>
+              </div>
+
+              <div class="primary-user-box">
+                <div
+                  class="primary-user-box--header"
+                  style="
+                    background-image: url(images/course-img/1754098_e0df_3.jpg);
+                  "
+                ></div>
+                <div class="primary-user-box--body">
+                  <div class="primary-user--img">
+                    <img src="./images/frame.jpg" alt="" />
+                  </div>
+                  <div class="primary-user--info">
+                    <div class="wrap">
+                      <h3>Shirley Setia</h3>
+                      <p class="mb-1">Sr. Web Designer (Creator)</p>
+                    </div>
+                    <div class="btns d-flex">
+                      <!-- <a href="javascript:void(0)" class="outline">
+                                  <i class="icon-bubbles icons"></i> Message
+                              </a> -->
+                      <a href="javascript:void(0)" class="ls-btn ls-btn-blue">
+                        <i class="icon-user-following icons"></i> Follow
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="primary-user-box--footer">
                       <ul>
                           <li><i class="far fa-eye"></i>1.25k</li>
                           <li><i class="fas fa-heart"></i>15k</li>
                       </ul>
                   </div> -->
-                </div>
+              </div>
+            </div>
+
+            <div
+              class="primary-box border-0 background-color-transparent box-shadow-none p-0"
+            >
+              <div class="primary-box-header">
+                <h4 class="d-flex align-items-end m-0">Courses By Shirley</h4>
               </div>
 
               <div
-                class="primary-box background-color-transparent box-shadow-none p-0"
+                class="owl-carousel m-0 owl-theme show-nav-title"
+                data-plugin-options="{'autoplay': false, 'items': 1, 'nav': true, 'dots': false}"
               >
-                <div class="primary-box-header">
-                  <h4 class="d-flex align-items-end m-0">Courses By Shirley</h4>
-                </div>
-
                 <div
-                  class="owl-carousel m-0 owl-theme show-nav-title"
-                  data-plugin-options="{'items': 1, 'margin': 15, 'loop': true, 'autoplay': false, 'nav': true, 'dots': false}"
+                  class="course-thumbnail no-effect mb-0"
+                  onclick="window.open('course-description.html','mywindow');"
+                  style="cursor: pointer"
                 >
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/1754098_e0df_3.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>The Data Science Course</h3>
-                      <p>
-                        Complete Data Science Training: Mathematics, Statistics,
-                        Python, Advanced Statistics in Python & Machine
-                        Learning.
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1k</li>
-                        <li>
-                          <div class="star-rating d-flex align-items-center">
-                            <div class="wrap d-flex">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="far fa-star"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>Going Digital</h3>
+                    <p>
+                      Going Digital is your need of the hour and also the
+                      future. With technology and AI forcing its way, selling
+                      insurance now has new rules. Learn about them in this
+                      course.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
                     </div>
                   </div>
-
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/903744_8eb2.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>Python for Data Science</h3>
-                      <p>
-                        Learn how to use NumPy, Pandas, Seaborn , Matplotlib ,
-                        Plotly , Scikit-Learn , Machine Learning, Tensorflow ,
-                        and more!
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1k</li>
-                        <li>
-                          <div class="star-rating d-flex align-items-center">
-                            <div class="wrap d-flex">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="far fa-star"></i>
-                            </div>
-                            <span>(5.0)</span>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
+                  <div class="course-thumbnail--header">
+                    <!-- <div class="free">Free</div> -->
+                    <img
+                      src="images/business-dashboard/Top Pick-Going Digital-wm.jpg"
+                    />
                   </div>
-
-                  <div class="course-thumbnail no-effect mb-0">
-                    <div class="course-thumbnail--header">
-                      <img src="images/course-img/258316_55e9_8.jpg" />
-                    </div>
-                    <div class="course-thumbnail--body">
-                      <div class="responses">Course</div>
-                      <h3>Complete C#</h3>
-                      <p>
-                        Learn Unity in C# & Code Your First Seven 2D Video Games
-                        for Web, Mac & PC. The Tutorials Cover Tilemap (35
-                        hours)
-                      </p>
-                    </div>
-                    <div class="course-thumbnail--footer">
-                      <ul>
-                        <li><i class="far fa-eye"></i>1k</li>
-                        <li>
-                          <div class="star-rating d-flex align-items-center">
-                            <div class="wrap d-flex">
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="fas fa-star active"></i>
-                              <i class="far fa-star"></i>
-                            </div>
-                            <span>(5.0)</span>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>Going Digital</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                           </div>
-                        </li>
-                      </ul>
-                    </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
 
-              <div
-                class="try-for-business mt-4"
-                style="background-image: url('images/bg2.jpg')"
-              >
-                <img src="images/logo-white.svg" class="mb-2" width="160" />
-                <h3>Training 5 or more people?</h3>
-                <p>
-                  Get your team access to 5,000+ top Learnsure courses anytime,
-                  anywhere.
-                </p>
-                <a href="javscript:void(0)">Try Learnsure for Business</a>
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>Build a BRAND YOU</h3>
+                    <p>
+                      Hop in to understand the importance and benefits of
+                      building your very own brand presence to elevate and
+                      enhance your sales.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <div class="free">Free</div>
+                    <img
+                      src="images/business-dashboard/what's-new/Whats New-Build Your Own Brand.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>Build a BRAND YOU</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>The Sales Drain</h3>
+                    <p>
+                      The Sales Drain scenario makes you figure out how a good
+                      number of potential insurance products while simply
+                      talking to the customer.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/what's-new/Whats New- Sales Drain.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>The Sales Drain</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>The Change Grid</h3>
+                    <p>
+                      The Change Grid is the new emotional intelligence and more
+                      today centric where the old rules make up for the base but
+                      the new rules will get you what your require.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/what's-new/Whats New-Change grid.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>The Change Grid</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="course-thumbnail no-effect mb-0">
+                  <div class="course-thumbnail--overlay">
+                    <i class="icon-pin icons"></i>
+                    <h3>The Digital customer experience</h3>
+                    <p>
+                      The digital customer is different from the traditional
+                      one. This course highlights the key differentiators where
+                      you can challenge and change their one-time experience.
+                    </p>
+                    <div class="host-info">
+                      <img src="./images/simulation.jpg" />
+                      <div class="wrap">
+                        <h3>Shubham Pandey</h3>
+                        <p>7 months ago</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-thumbnail--header">
+                    <img
+                      src="images/business-dashboard/what's-new/Whats New-Digital Experience.jpg"
+                    />
+                  </div>
+                  <div class="course-thumbnail--body" style="padding-top: 15px">
+                    <h3>The Digital customer experience</h3>
+                  </div>
+                  <div class="course-thumbnail--footer border-0">
+                    <ul>
+                      <li><i class="far fa-eye"></i>1.5k</li>
+                      <li class="border-0">
+                        <div class="star-rating d-flex">
+                          <div class="wrap">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                          </div>
+                          <span>(5.0)</span>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </main>
 
-      <footer id="footer" class="bg-color-secondary border-0 mt-0">
-        <div class="footer-copyright bg-color-secondary">
-          <div class="container container-lg-custom">
-            <div class="row">
-              <div class="col">
-                <hr class="my-0 bg-color-light opacity-2" />
-              </div>
+    <footer id="footer" class="bg-color-secondary border-0 mt-0">
+      <div class="footer-copyright bg-color-secondary">
+        <div class="container container-lg-custom">
+          <div class="row">
+            <div class="col">
+              <hr class="my-0 bg-color-light opacity-2" />
             </div>
-            <div class="row align-items-center py-4 mt-2">
-              <div class="col-lg-6 text-center text-lg-left mb-lg-0">
-                <a href="/">
-                  <img alt="logo" src="images/logo-white.svg" width="160" />
-                </a>
-              </div>
-              <div class="col-lg-6 text-center text-lg-right">
-                <p class="mb-0 text-light">
-                  &copy; 2020 Learnsure. All rights reserved.
-                </p>
-              </div>
+          </div>
+          <div class="row align-items-center py-3">
+            <div class="col-lg-6 text-center text-lg-left mb-lg-0">
+              <a href="/">
+                <img alt="logo" src="images/logo-white.svg" width="160" />
+              </a>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+              <p class="mb-0 text-light">
+                &copy; 2020 Learnsure. All rights reserved.
+              </p>
             </div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+
     <!-- Vendor -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/jquery.appear/jquery.appear.min.js"></script>
@@ -1569,37 +1575,5 @@
     <script src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
     <!-- Theme Initialization Files -->
     <script src="js/theme.init.js"></script>
-
-    <script>
-      $("#register").hide();
-      $("#forgot-password").hide();
-
-      $(".register-btn").click(function () {
-        $("#register").show();
-        $("#login").hide();
-        // $("#forgot-password").hide();
-      });
-      $(".login-btn").click(function () {
-        alert("vd");
-        $("#register").hide();
-        $("#forgot-password").hide();
-        $("#login").show();
-      });
-      $(".forgot-btn").click(function () {
-        $("#forgot-password").show();
-        // $("#register").hide();
-        $("#login").hide();
-      });
-
-      $(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() >= 70) {
-            $("#category-bar").addClass("stick");
-          } else {
-            $("#category-bar").removeClass("stick");
-          }
-        });
-      });
-    </script>
   </body>
 </html>
