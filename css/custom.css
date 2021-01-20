@@ -3074,3 +3074,10 @@ a:hover {
 .custom-nav-link:not(.active).nav-link {
   color: #000;
 }
+
+
+/*mystyle*/
+.tabs .tab-content {
+  border: 0;
+  padding: 0;
+}
