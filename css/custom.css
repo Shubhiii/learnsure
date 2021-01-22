@@ -696,7 +696,8 @@ a:hover {
 }
 
 .course-thumbnail--header {
-  height: 287px;
+  /* height: 287px; */
+  height: 220px;
   position: relative;
   display: flex;
   background-size: cover;
@@ -1055,7 +1056,7 @@ a:hover {
 
 .invitation-box .hosted-by .host-info .wrap h3 {
   text-transform: none;
-  font-size: 14px;
+  font-size: 12px;
   margin: 0;
   line-height: 1;
 }
@@ -1876,6 +1877,12 @@ a:hover {
   list-style: none;
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
   /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
+}
+
+.course-includes.position-absolute {
+  height: 87px;
+  display: flex;
+  align-items: center;
 }
 
 .course-includes.position-absolute ul {
