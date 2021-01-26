@@ -344,6 +344,7 @@ a:hover {
   line-height: normal;
   opacity: 0.5;
   font-size: 12px;
+  text-transform: lowercase;
 }
 
 .card-filters {
@@ -860,6 +861,7 @@ a:hover {
   position: relative;
   border-radius: 50%;
   border: 3px solid #fff;
+  background-color: #fff;
 }
 
 .primary-user--img img {
@@ -2518,6 +2520,7 @@ a:hover {
   cursor: pointer;
   border-radius: 50%;
   border: 3px solid #fff;
+  background-color: #fff;
 }
 
 .profile-card .profile-info .profile-info-icon:hover i {
@@ -2716,6 +2719,7 @@ a:hover {
   line-height: 1;
   border-radius: 50px;
   padding: 7px 15px;
+  text-transform: capitalize;
 }
 
 .post-card {
