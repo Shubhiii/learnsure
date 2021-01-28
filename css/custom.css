@@ -2356,7 +2356,7 @@ a:hover {
   margin: 0;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1;
+  line-height: normal;
   text-transform: capitalize;
   color: #000;
 }
@@ -4045,4 +4045,34 @@ html.sticky-header-active
   > li
   > a.current {
   color: #fff;
+}
+
+.primary-box .host-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.primary-box .host-info img {
+  border-radius: 50%;
+  width: 40px;
+  object-fit: cover;
+  height: 40px;
+  margin-right: 10px;
+  object-position: top;
+}
+
+.primary-box .host-info .wrap h3 {
+  text-transform: none;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1;
+}
+
+.primary-box .host-info .wrap p {
+  font-size: 12px;
+  line-height: 1;
+  /* opacity: 0.5; */
+  margin-top: 5px;
+  margin-bottom: 0;
 }
