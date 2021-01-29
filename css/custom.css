@@ -4076,3 +4076,9 @@ html.sticky-header-active
   margin-top: 5px;
   margin-bottom: 0;
 }
+
+.toggle > label i.icon-doc,
+.toggle > .toggle-title i.icon-doc {
+  font-size: 33px;
+  color: var(--secondaryColor);
+}
